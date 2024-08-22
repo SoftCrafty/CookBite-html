@@ -1,0 +1,102 @@
+/*** Best Offer Code ***/
+
+.cs-best-offer {
+    background: $body-color2;
+    overflow: hidden;
+
+    .swiper {
+        overflow: visible;
+        margin-top: 60px;
+
+    }
+
+    .offer-item {
+        position: relative;
+
+        img {
+            border-radius: 20px;
+
+            width: 100%;
+        }
+
+        .offer-text {
+            background: $white-color;
+            padding: 20px 30px;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            opacity: 1;
+            visibility: hidden;
+            z-index: -1;
+            -webkit-transition: all .8s ease-out;
+            -o-transition: all .8s ease-out;
+            transition: all .8s ease-out;
+         -webkit-transform: translateY(20px);
+                -ms-transform: translateY(20px);
+                transform: translateY(20px);
+
+            span {
+                color: $gray-color3;
+                position: relative;
+                display: inline-block;
+
+                &:before {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 100px;
+                    background: $theme-color;
+                    display: inline-block;
+                    margin-right: 10px;
+                    margin-top: -20px;
+
+                }
+            }
+        }
+
+        &:hover {
+            .offer-text {
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                -webkit-transition: all .8s ease-out;
+                -o-transition: all .8s ease-out;
+                transition: all .8s ease-out;
+                -webkit-transform: translateY(-100px);
+                -ms-transform: translateY(-100px);
+                transform: translateY(-100px);
+            }
+
+            &:before {
+                opacity: 0.6;
+                -webkit-transition: all .8s ease-out;
+                -o-transition: all .8s ease-out;
+                transition: all .8s ease-out;
+             -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        &:before {
+            content: "";
+            background: $black-color;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            display: block;
+            border-radius: 20px;
+            -webkit-transition: all .8s ease-out;
+            -o-transition: all .8s ease-out;
+            transition: all .8s ease-out;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+    }
+}

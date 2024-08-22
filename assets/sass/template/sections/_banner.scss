@@ -1,0 +1,39 @@
+/*** Banner Code ***/
+
+.cs-banner {
+    background: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 242px 0px;
+
+    @include lg {
+        padding: 180px 0px;
+    }
+
+    @include sm {
+        padding: 120px 0px;
+    }
+
+    .banner-breadcrumb {
+        .page-title {
+            color: $white-color;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb {
+            color: $white-color;
+
+            a {
+                color: $white-color;
+            }
+
+            i {
+                margin-top: 5px;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+        }
+
+    }
+}

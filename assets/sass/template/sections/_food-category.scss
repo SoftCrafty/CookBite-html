@@ -1,0 +1,64 @@
+/*** Food Category Code ***/
+
+.cs-food-category {
+    background: $body-color2;
+
+    .content-text {
+        margin-top: 20px;
+    }
+
+    .category-items {
+        margin-top: 37px;
+
+        .category-img {
+            margin: 0px 35px;
+
+            img {
+                width: 100%;
+                border-radius: 20px 20px 0px 0px;
+            }
+        }
+
+        .category-body {
+            background: $white-color;
+            padding: 80px 70px 60px 70px;
+            margin-top: -45px;
+            border-radius: 0px 0px 20px 20px;
+
+            .category-price {
+                span {
+                    color: $theme-color2;
+                }
+            }
+
+            .category-title {
+                padding: 10px 0px 20px 0px;
+            }
+
+            .category-text {
+                color: $gray-color3;
+            }
+        }
+
+        .category-btn {
+            text-align: center;
+            margin-top: -35px;
+
+            .cs-btn2 {
+                background: $white-color;
+                border-color: $gray-color;
+                span{
+                    color: $title-color;
+                }
+                &:hover{
+                    &:before{
+                        background: $theme-color2;
+                    }
+                     span{
+                    color: $white-color;
+                }
+                }
+            }
+        }
+    }
+}

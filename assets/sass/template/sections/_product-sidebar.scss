@@ -1,0 +1,81 @@
+/*** Product Sidebar Code ***/
+
+.cs-shop-widget {
+    background: $white-color;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+
+    @include md {
+        margin-top: 40px;
+    }
+
+    @include lg {
+        padding: 35px;
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .cs-shop-widget-category {
+        margin-top: 30px;
+
+        .category-name {
+            img {
+                margin-right: 15px;
+            }
+        }
+
+        li {
+            background: $light-gray3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .range-slider {
+        margin-top: 30px;
+
+        .range-bottom {
+            margin-top: 30px;
+
+            .cs-shop-widget-filter-btn {
+                padding: 5px 20px;
+                border: 1px solid $theme-color;
+                border-radius: 100px;
+            }
+        }
+
+        #price-range {
+            height: 3px;
+            background: $theme-color2;
+            position: relative;
+            padding: 0px;
+        }
+
+        .ui-slider-handle {
+            background: $theme-color2;
+            width: 15px;
+            height: 15px;
+            display: block;
+            position: absolute;
+            border-radius: 100px;
+            margin-top: -6px;
+
+            &:focus-visible {
+                outline: none !important;
+            }
+        }
+    }
+
+
+
+
+}

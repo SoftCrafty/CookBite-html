@@ -1,0 +1,26 @@
+/*** CTA Code ***/
+
+.cs-cta-area {
+    background: $body-color2;
+
+    .cta-box {
+        background: -webkit-gradient(linear, left top, right top, from(#00833E), to(#001D0E));
+        background: -o-linear-gradient(left, #00833E, #001D0E);
+        background: linear-gradient(90deg, #00833E, #001D0E);
+        padding: 60px 80px;
+        border-radius: 20px;
+        margin-top: -235px;
+        z-index: 9;
+        position: relative;
+
+        @include xs {
+            padding: 30px 50px;
+        }
+
+        .cta-img {
+            @include md {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

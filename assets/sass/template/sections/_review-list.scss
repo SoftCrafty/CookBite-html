@@ -1,0 +1,42 @@
+.cs-review-list {
+    .reviews-box {
+        background: $white-color;
+        margin-top: 30px;
+        border-radius: 20px;
+        padding: 40px;
+        
+        .review-body {
+            gap: 20px;
+
+            .review-avatar {
+                width: 15%;
+
+                img {
+                    width: 100%;
+                    border-radius: 100px;
+                }
+            }
+
+            .review-info {
+                justify-content: space-between;
+            }
+
+            .review-comment-stars {
+                i {
+                    color: $yellow-color;
+                }
+            }
+
+            .review-date {
+                span {
+                    color: $theme-color2;
+                }
+            }
+
+            p {
+                color: $gray-color3;
+            }
+        }
+
+    }
+}

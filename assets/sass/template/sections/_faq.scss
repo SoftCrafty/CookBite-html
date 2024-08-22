@@ -1,0 +1,94 @@
+/*** Faq Code ***/
+
+.cs-faq-area {
+    background: $body-color2;
+
+    .accordion {
+        margin-top: 40px;
+
+        .accordion-item {
+            border: 1px solid $light-gray2;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            padding: 20px 30px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            .accordion-header {
+                background: transparent;
+                line-height: 25px;
+
+                button {
+                    text-align: left;
+                }
+            }
+
+            .accordion-collapse {
+                border: none;
+
+                .accordion-body {
+                    padding: 0px;
+                    padding-top: 20px;
+
+                    .faq-text {
+                        color: $gray-color3;
+                    }
+                }
+            }
+
+
+            .accordion-button {
+                border: none;
+                padding: 0px;
+
+                &:focus {
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+
+                &:after {
+
+                    font-family: $icon-font;
+                    content: "\2b";
+                    background-image: none;
+                    font-size: 22px;
+                    color: $theme-color;
+                }
+
+
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: $title-color;
+                background-color: transparent;
+
+                &:after {
+
+                    font-family: $icon-font;
+                    content: "\f068";
+                    background-image: none;
+                    font-size: 22px;
+                    color: $theme-color;
+                }
+            }
+        }
+
+    }
+
+    .faq-img {
+        padding: 30px 30px 118px 30px;
+        border: 1px solid $light-gray2;
+        border-radius: 20px;
+
+        @include md {
+            margin-top: 50px;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+}

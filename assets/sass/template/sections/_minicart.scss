@@ -1,0 +1,102 @@
+.cs-minicart-area {
+  position: absolute;
+  top: 328%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  width: 288px;
+  height: auto;
+  padding: 20px;
+  background: $white-color;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: all ease-in-out .4s;
+
+  @include xxxl {
+    left: 75%;
+  }
+
+  @include xxl {
+    left: 78%;
+  }
+
+  @include ml {
+    left: 71%;
+  }
+
+  @include xl {
+    left: 66%;
+  }
+
+  @include lg {
+    left: 80%;
+  }
+
+  @include md {
+    left: 62%;
+    top: 344%;
+
+  }
+
+  @include sm {
+    left: 62%;
+    top: 344%;
+
+  }
+
+  @include vxs {
+    left: 60%;
+    top: 350%;
+
+  }
+
+  &.openCart {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    transition: all ease-in-out .4s;
+  }
+
+  .minicart--item {
+    margin-bottom: 10px;
+    width: 100%;
+    gap: 20px;
+
+    .mini-cartimage {
+      width: 30%;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    .mini-cartinfo {
+      .price {
+        color: $theme-color;
+        font-size: 12px;
+      }
+
+      .remove {
+        font-size: 10px;
+      }
+    }
+
+  }
+
+  .minicart--subtotal {
+    .minicart--subtotal-title {
+      float: left;
+      color: $title-color;
+    }
+
+    .minicart--subtotal-amount {
+      float: right;
+      color: $title-color;
+    }
+  }
+
+}

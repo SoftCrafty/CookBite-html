@@ -1,0 +1,100 @@
+/*** Food Menu ***/
+
+.cs-food-menu {
+    background: $chocolate-color;
+    position: relative;
+    padding-bottom: 350px;
+    .food-menu {
+        border-radius: 20px;
+        height: 100%;
+        border-radius: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        overflow: hidden;
+
+        .menu-body {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100%;
+            border-radius: 20px;
+
+            .menu-content {
+                margin-top: auto;
+            }
+
+            .menu-content2 {
+                @include md {
+                    padding-right: 20px;
+                }
+
+                @include xs {
+                    padding-left: 50px;
+                    padding-top: 60px;
+                }
+            }
+        }
+
+    }
+
+    .menu-btn {
+        .cs-btn2 {
+            background: $white-color2;
+            border-color: transparent;
+            &:hover{
+                &:before{
+                 background: $white-color;
+               
+            }
+            span{
+                  color:$title-color
+            }
+            }
+        }
+    }
+
+    .shape-one {
+        @include position(absolute, -10px, 160px, null, null);
+
+        img {
+            @include xxl {
+                width: 60%;
+            }
+        }
+
+        @include sm {
+            display: none;
+        }
+
+    }
+
+    .shape-two {
+        @include position(absolute, null, null, 0, 140px);
+
+        @include xxl {
+            bottom: 230px;
+            width: 10%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @include sm {
+            display: none;
+        }
+
+    }
+}

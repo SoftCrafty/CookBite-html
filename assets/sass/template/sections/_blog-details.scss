@@ -1,0 +1,48 @@
+/*** Single Blog Code ***/
+
+.cs-blog-details-area{
+    background: $body-color2;
+    .single-blog-image{
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    .single-blog-meta{
+       a{
+         i{
+            color:$theme-color2;
+            padding-right: 5px ;
+        }
+       }
+    }
+    .single-blog-desc{
+        color:$gray-color3;
+    }
+    blockquote{
+        background: $white-color;
+        padding: 30px;
+        color:$gray-color3;
+        border-left: 2px solid $theme-color2;
+    }
+    .share-links{
+        .share-links-title{
+            display: inline-block;
+            color:$black-color;
+            font-weight: 700;
+        }
+        .tagcloud{
+            display: inline-block;
+            a{
+                background: $white-color;
+                padding: 10px 20px;
+                text-align: center;
+                border-radius: 100px;
+                &:hover{
+                    background: $theme-color2;
+                    color:$white-color;
+                }
+            }
+        }
+    }
+}

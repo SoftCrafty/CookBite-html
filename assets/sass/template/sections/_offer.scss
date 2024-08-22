@@ -1,0 +1,13 @@
+/*** Offer Code ***/
+
+.cs-offer-area {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 350px;
+
+    .offer-imgbox {
+        @include md {
+            margin-bottom: 60px;
+        }
+    }
+}

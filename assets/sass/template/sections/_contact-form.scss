@@ -1,0 +1,81 @@
+/*** Contact Form Code ***/
+
+.cs-contact-area {
+    background: $body-color2;
+    .contact-text{
+        color:$gray-color3;
+    }
+    .cs-contact-form {
+        width: 1000px;
+        margin: 0 auto;
+        background: $light-gray3;
+        padding: 60px;
+        border-radius: 20px;
+
+        @include vxs {
+            padding: 30px 15px;
+        }
+
+        @include lg {
+            width: 900px;
+        }
+
+        @include md {
+            width: 100%;
+        }
+
+        .contact-form {
+            margin-top: 40px;
+
+
+            input {
+                background: $white-color;
+                color: $gray-color3;
+                margin-bottom: 30px;
+                margin-top: 0px;
+
+                &::placeholder {
+                    color: $gray-color3;
+                }
+            }
+
+            .form-select {
+                background: $white-color;
+                margin-top: 0px;
+                color: $gray-color3;
+            }
+
+            textarea {
+                background: $white-color;
+                color: $gray-color3;
+                margin-top: 0px;
+
+                @include sm {
+                    margin-top: 0px !important;
+                    
+                }
+
+                &::placeholder {
+                    color: $gray-color3;
+                }
+            }
+
+
+            .contact-btn {
+                margin-top: 10px;
+
+                .cs-btn {
+                    padding: 25px 120px;
+                    background: $gold-color;
+                    border-color: $gold-color;
+                    margin-top: 20px;
+
+                    @include xs {
+                        padding: 20px 60px;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,71 @@
+/*** Preloader Code ***/
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+
+        .preloader
+        {
+           width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $theme-color2;
+          
+        }
+        .preloader-grid
+        {
+            margin: auto;
+            margin-right: 1px;
+            width: 50px;
+            height: 50px;
+            display: grid;
+            gap: 0px;
+            grid-template-columns: auto auto;
+            animation: rotate 2s linear 0s infinite;
+        }
+        .item1
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+            background-color: rgb(255, 255, 255);
+        }
+        .item2
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+             background-color: rgb(255, 255, 255);
+        }
+        .item3
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+             background-color: rgb(255, 255, 255);
+        }
+        .item4
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+             background-color: rgb(255, 255, 255);
+        }
+        @keyframes rotate 
+        {
+            0%{rotate: 0deg; transform: scale(0.6);}
+            50%{ rotate: 100deg; transform: scale(0.4);}    
+            100%{rotate: 360deg; transform: scale(0.6);}
+        }
+        .preloader-loader-h
+        {
+            margin: auto;
+            margin-left: 5px;
+              color: $white-color;
+        }

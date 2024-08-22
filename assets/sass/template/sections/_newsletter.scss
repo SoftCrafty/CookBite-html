@@ -1,0 +1,92 @@
+/*** Newsletter Code ***/
+
+.cs-newsletter-area {
+    background: $body-color2;
+
+    .newsletter-form {
+        background: -webkit-gradient(linear, left top, right top, color-stop(3%, rgb(211 0 0)), color-stop(39%, rgb(126 0 0)), color-stop(70%, rgb(109 0 0 / 0%))), url('../img/newsletter/newsletter.jpg');
+        background: -o-linear-gradient(left, rgb(211 0 0) 3%, rgb(126 0 0) 39%, rgb(109 0 0 / 0%) 70%), url('../img/newsletter/newsletter.jpg');
+        background: linear-gradient(90deg, rgb(211 0 0) 3%, rgb(126 0 0) 39%, rgb(109 0 0 / 0%) 70%), url('../img/newsletter/newsletter.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 80px;
+        border-radius: 20px;
+
+        @include md {
+            padding: 60px 40px;
+        }
+
+
+        .subsribe-form {
+            margin-top: 25px;
+
+            input {
+                margin-top: 0px;
+                height: 60px;
+            }
+            .newsletter-submit {
+                    .cs-btn{
+                        &:hover{
+                            &::before{
+                                background: $white-color;
+                            }
+                            span{
+                                color:$title-color;
+                            }
+                        }
+                    }
+                }
+
+            @include xs {
+                .newsletter-submit {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.newsletter-style2 {
+    background: $white-color;
+    padding: 30px 40px 25px 40px;
+    border-radius: 20px;
+    margin: -88px 30px 0px 30px;
+
+    .subsribe-form {
+        margin-top: 25px;
+
+        input {
+            margin-top: 0px;
+            height: 60px;
+            border: 1px solid $gray-color;
+            color: $gray-color3;
+
+            &::-webkit-input-placeholder {
+                color: $gray-color3;
+            }
+
+            &::-moz-placeholder {
+                color: $gray-color3;
+            }
+
+            &:-ms-input-placeholder {
+                color: $gray-color3;
+            }
+
+            &::-ms-input-placeholder {
+                color: $gray-color3;
+            }
+
+            &::placeholder {
+                color: $gray-color3;
+            }
+        }
+
+        @include lg {
+            .newsletter-submit {
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.cs-product-area {
+    background: $body-color2;
+
+}
+
+.product-item {
+    background: $white-color;
+    padding: 30px 40px;
+    gap: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    .thubmnail-img {
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    .product-content {
+        .discount {
+            color: $theme-color2;
+        }
+
+        @include xl {
+            width: 50%;
+        }
+
+        @include sm {
+            padding-top: 15px;
+            width: 100%;
+        }
+
+        .product-title {
+            padding: 15px 0px;
+            display: block;
+        }
+
+        .product-rating {
+            padding-top: 25px;
+            padding-bottom: 30px;
+
+            ul {
+                gap: 5px;
+
+                li {
+                    a {
+                        color: $yellow-color2;
+                    }
+                }
+            }
+        }
+
+    }
+}

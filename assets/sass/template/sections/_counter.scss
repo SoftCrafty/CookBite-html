@@ -1,0 +1,53 @@
+/*** Counter Code ***/
+
+.cs-counter-layout2 {
+    background: $body-color2;
+
+
+    .counter-layout2 {
+        background: $theme-color2;
+        padding: 40px 60px;
+        border-radius: 20px;
+        color: $white-color;
+        text-align: right;
+        position: relative;
+
+        @include md {
+            .col-md-4 {
+                &:nth-child(4) {
+                    margin-top: 20px;
+                }
+
+                &:nth-child(5) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        @include sm {
+            .counter-box {
+                text-align: center;
+
+            }
+
+            .col-md-4 {
+                &:nth-child(3) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        @include vxs {
+             padding: 30px;
+            .col-md-4 {
+                &:nth-child(3) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .counter-number {
+            color: $white-color;
+        }
+    }
+}

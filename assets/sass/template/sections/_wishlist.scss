@@ -1,0 +1,30 @@
+.cs-wishlist-area {
+    background: $body-color2;
+
+    .wishlist-content {
+        .wishlist-text {
+            color: $gray-color3
+        }
+    }
+    td {
+        border: none;
+
+        &.cart-product {
+            gap: 45px;
+            padding: 30px 40px;
+                @include lg{
+                    width: 300px;
+                    }
+            .product-thumbnail {
+                img {
+                    border-radius: 20px;
+                    
+                        @include xl{
+                            width: 150px !important;
+                        }
+
+                }
+            }
+        }
+    }
+}

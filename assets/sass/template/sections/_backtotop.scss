@@ -1,0 +1,52 @@
+/*** BackTo Top Code ***/
+
+.back-to-top-wrapper {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    @include xs {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    &.back-to-top-btn-show {
+        visibility: visible;
+        opacity: 1;
+        bottom: 50px;
+    }
+}
+
+.back-to-top-btn {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 30px;
+    text-align: center;
+    background: $black-color;
+    -webkit-box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
+    box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
+    color: $white-color;
+    border-radius: 50%;
+
+
+    & i {
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+
+    &:hover {
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+}

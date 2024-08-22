@@ -1,0 +1,111 @@
+/*** Cart Code ***/
+
+.cs-cart-area {
+    background: $body-color2;
+
+}
+.cart-table{
+
+
+        table {
+
+            border-collapse: separate;
+            border-spacing: 0 30px;
+
+            @include md {
+                width: 950px;
+            }
+
+            thead {
+                th {
+                    border: none;
+
+                    span {
+                        background: $white-color;
+                        padding: 10px 30px;
+                        border-radius: 100px;
+                    }
+                }
+            }
+
+            tbody {
+                vertical-align: middle;
+
+                tr {
+                    background: $white-color;
+
+                    td {
+                        border: none;
+
+                        &.cart-product {
+                            gap: 45px;
+                            padding: 30px 40px;
+                            .product-thumbnail {
+                                img {
+                                    border-radius: 20px;
+                                }
+                            }
+                            
+                            .product-title {
+                                padding-top: 15px;
+                                padding-bottom: 25px;
+                                display: block;
+                            }
+
+                            .product-price {
+                                color: $theme-color2;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .shop-details-quantity {
+        width: 100px;
+        border: 1px solid $gray-color !important;
+        border-radius: 10px;
+        padding: 7px 20px;
+
+        input {
+            color: $title-color;
+            padding: 0;
+            text-align: center;
+            height: auto;
+            line-height: 10px;
+            margin-top: 0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        i {
+            color: $title-color;
+            font-size: 16px;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        .cart-plus {
+            cursor: pointer;
+        }
+
+        .cart-minus {
+            cursor: pointer;
+        }
+
+    }
+    .cart-action {
+        i {
+            background: $black-color;
+            border-radius: 100px;
+            color: $white-color;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }

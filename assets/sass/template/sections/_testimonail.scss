@@ -1,0 +1,172 @@
+/*** Testimonial Code ***/
+
+.cs-testimonail-area {
+    background: $body-color2;
+
+    .testimonail-item {
+        background: $white-color;
+        padding: 40px;
+        border: 2px solid $gray-color;
+        border-radius: 20px;
+        margin-top: 60px;
+
+        @include vxs {
+            padding: 20px;
+        }
+
+        .testimonail-infos {
+            gap: 33px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            @include vxs {
+                display: block;
+            }
+
+            .client-meta {
+                @include vxs {
+                    margin-top: 20px;
+                }
+
+                .client-rating {
+                    ul {
+                        gap: 5px;
+
+                        i {
+                            color: $yellow-color2
+                        }
+                    }
+
+                }
+
+                span {
+                    color: $gray-color3;
+                }
+
+            }
+
+
+        }
+
+    }
+
+    .testimonail-content {
+        padding-top: 30px;
+
+        @include xs {
+            padding-top: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 36px;
+            color: $gray-color3;
+
+            @include xs {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        h4 {
+            @include xs {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &.layout2 {
+
+        .testimonial-container {
+            background: url('../img/testimonail/testimonail-img.png');
+            padding: 60px 0px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            border-radius: 20px;
+
+            @include md {
+                background-size: cover;
+            }
+
+            @include sm {
+                padding: 60px 30px;
+            }
+
+            @include vxs {
+                padding: 40px 20px;
+            }
+        }
+
+        .testimonail-item {
+            border: none;
+            margin-top: 0px;
+
+            .client-meta {
+
+
+                span {
+                    color: $gray-color3;
+                }
+            }
+
+            .client-rating {
+                ul {
+                    gap: 5px;
+
+                    i {
+                        color: $yellow-color2
+                    }
+                }
+
+            }
+        }
+
+        .slider-arrow {
+            background: $white-color ;
+            border-color: $white-color;
+
+            &:hover {
+                background: $theme-color;
+                border-color: $theme-color;
+
+                i {
+                    color: $white-color;
+                }
+            }
+
+
+        }
+
+        .slider-next {
+            position: absolute;
+            top: 93%;
+            right: -23%;
+
+        }
+
+        .slider-prev {
+            position: absolute;
+            left: 105%;
+            top: 93%;
+        }
+
+    }
+
+    .swiper-pagination-bullet {
+        width: 30px;
+        height: 5px;
+        border-radius: 5px;
+        background: $gray-color3;
+
+        &.swiper-pagination-bullet-active {
+            width: 65px;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

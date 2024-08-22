@@ -1,0 +1,189 @@
+/*** Shop Details Code ***/
+
+.cs-gallery-product-img {
+
+
+    img {
+        border-radius: 20px;
+
+    }
+}
+
+#nav-tab {
+    gap: 30px;
+    margin-top: 30px;
+
+    @include ml {
+        gap: 5px;
+
+        button {
+            width: 32%;
+        }
+    }
+    @include sm{
+        button {
+            width: 32%;
+        }
+    }
+    @include xs{
+        button {
+            width: 32%;
+        }
+    }
+
+    .active {
+        border: 1px solid $gray-color3;
+        border-radius: 20px;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    img {
+        border-radius: 20px;
+    }
+}
+
+.cs-shop-details-area {
+    background: $body-color2;
+
+    .shop-details-content {
+        background: $white-color;
+        padding: 40px;
+        border-radius: 20px;
+        margin-top: 40px;
+
+        .shop-details-short-des {
+            color: $gray-color3;
+        }
+
+        .shop-details-price {
+            color: $theme-color
+        }
+
+        .product-rating {
+            ul {
+                gap: 5px;
+
+                li {
+                    a {
+                        color: $yellow-color2;
+                    }
+                }
+            }
+        }
+
+        .shop-details-quantity-wrap {
+            gap: 30px;
+
+             @include xs{
+            display: block !important; 
+            .add-to-cart{
+                margin-top: 20px;
+            }
+            }
+
+            .shop-details-quantity {
+                width: 140px;
+                border: 1px solid $gray-color;
+                border-radius: 100px;
+                padding: 18px 28px;
+
+                input {
+                    color: $title-color;
+                    padding: 0;
+                    text-align: center;
+                    height: auto;
+                    margin-top: 0;
+                    font-size: 24px;
+                    line-height: 26px;
+                }
+
+                i {
+                    color: $title-color;
+                }
+
+                .cart-plus {
+                    cursor: pointer;
+                }
+
+                .cart-minus {
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+
+
+  
+}
+
+
+.cs-shop-description-area {
+
+    #nav-tab {
+        gap: 30px;
+
+        button{
+            @include sm{
+                width: 42%;
+            }
+            @include xs{
+                width: 100%;
+            }
+
+        }
+        .active {
+            border: 1px solid $gray-color;
+        }
+
+    }
+
+    .cs-btn {
+        background: transparent;
+        border: 1px solid $theme-color2;
+        color: $title-color;
+        padding: 20px 60px;
+
+        &:before{
+            display: none;
+        }
+        &.active {
+            background: $theme-color2;
+            border: 1px solid $theme-color2;
+            color: $white-color;
+            padding: 20px 60px;
+            border-radius: 100px !important;
+        }
+    }
+
+    .shop-long-description {
+        p {
+            color: $gray-color3;
+            padding-top: 20px;
+
+            &:first-child {
+                padding-top: 30px;
+            }
+        }
+
+        >ul {
+            >li {
+                padding-bottom: 20px;
+                color: $gray-color3;
+
+                i {
+                    color: $theme-color2;
+                    padding-right: 15px;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+/*** Video Popup Code ***/
+
+.cs-video-popup {
+    background: $body-color2;
+
+    .video-box {
+        background: url('../img/video/video.jpg');
+        padding: 200px 80px;
+        border-radius: 20px;
+        margin-top: -235px;
+        z-index: 9;
+        position: relative;
+
+        @include sm {
+            padding: 150px 80px;
+        }
+
+        .play-btn {
+
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+
+            i {
+                font-size: 30px;
+                background-color: $theme-color;
+                color: $white-color;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                text-align: center;
+                border-radius: 50%;
+                position: relative;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $white-color;
+                z-index: -1;
+                border-radius: 50%;
+                -webkit-transition: all ease 0.4s;
+                -o-transition: all ease 0.4s;
+                transition: all ease 0.4s;
+                -webkit-animation-duration: var(--ripple-ani-duration);
+                animation-duration: var(--ripple-ani-duration);
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-name: ripple;
+                animation-name: ripple;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $white-color;
+                z-index: -1;
+                border-radius: 50%;
+                -webkit-transition: all ease 0.4s;
+                -o-transition: all ease 0.4s;
+                transition: all ease 0.4s;
+                -webkit-animation-duration: var(--ripple-ani-duration);
+                animation-duration: var(--ripple-ani-duration);
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-name: ripple;
+                animation-name: ripple;
+                -webkit-animation-delay: 2s;
+                animation-delay: 2s
+            }
+
+        }
+    }
+
+}

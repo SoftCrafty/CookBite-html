@@ -1,0 +1,115 @@
+/*** Mini Contact Code ***/
+
+.cs-mini-contact {
+    background: $body-color2;
+
+    .mini-contact {
+
+        .row {
+            gap: 20px 0px;
+        }
+
+        background: $white-color;
+        padding: 40px 60px;
+        border-radius: 20px;
+
+        @include lg {
+            padding: 40px 20px;
+        }
+
+        .contact-item {
+            gap: 20px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            &.contact-item-border {
+                border-right: 1px solid $gray-color;
+                border-left: 1px solid $gray-color;
+
+                @include lg {
+                    border: none;
+                }
+            }
+
+
+
+            .contact-icon {
+                @include sm {
+                    margin-bottom: 20px;
+                }
+
+                >a {
+                    background: $theme-color2;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100px;
+                    display: inline-block;
+                    text-align: center;
+                    color: $white-color;
+                    line-height: 95px;
+
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .contact-info {
+                >a {
+                    padding-top: 10px;
+                    display: block;
+                    color: $title-color;
+                }
+            }
+        }
+    }
+
+
+}
+
+.style2 {
+    .mini-contact {
+        .contact-item {
+            .contact-icon {
+                >a {
+                    background: $light-gray3;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100px;
+                    display: inline-block;
+                    text-align: center;
+                    color: $gold-color;
+                    line-height: 95px;
+
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .contact-info {
+                >a {
+                    padding-top: 0px;
+                    padding-bottom: 5px;
+                    display: block;
+                    color: $title-color;
+
+                    &:first-of-type {
+                        padding-top: 10px;
+                    }
+
+                    &:last-child {
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.cs-contact-map {
+    background: $body-color2;
+}

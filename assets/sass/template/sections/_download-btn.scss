@@ -1,0 +1,43 @@
+/*** Download Button Code ***/
+
+.download-btns {
+    gap: 30px;
+    margin-top: 40px;
+
+    .donwload-btn {
+        gap: 10px;
+        padding: 15px;
+        border: 1px solid $gray-color;
+        border-radius: 20px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 4px;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 4px;
+
+        @include lg {
+            padding: 10px;
+        }
+
+        @include xs {
+            width: 65%;
+            margin: 0 auto;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            &:first-of-type {
+                margin-bottom: 30px;
+            }
+        }
+
+        @include vxs {
+            width: 100%;
+        }
+    }
+
+
+}
+
+.download-tab-img {
+    @include md {
+        margin-top: 60px;
+    }
+}

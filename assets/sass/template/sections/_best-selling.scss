@@ -1,0 +1,125 @@
+/*** Best Selling Code ***/
+
+.cs-bestselling-area {
+    background: $body-color2;
+    overflow: hidden;
+    height: 930px;
+    @include md{
+        height: 1385px;
+    }
+    @include sm{
+        height: 100%;
+        padding-bottom: 120px  !important;
+    }
+    .selling-product {  
+        background: $white-color;
+        border-radius: 20px;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+
+        .product-img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .product-body {
+            .product-title {
+                .h4 {
+                    &:hover {
+                        color: $theme-color
+                    }
+                }
+            }
+
+            .cart {
+                background: $theme-color;
+                border-radius: 100px;
+                padding: 10px;
+                color: $white-color;
+                font-size: 25px;
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                line-height: 30px;
+
+            }
+
+            .body-text {
+                color: $gray-color3;
+            }
+
+            .product-rating {
+                ul {
+                    gap: 8px;
+
+                    li {
+                        i {
+                            color: $yellow-color;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .product-cart {
+                i {
+                    font-size: 24px;
+                }
+            }
+
+            .product-btn {
+                opacity: 0;
+                position: absolute;
+                -webkit-transition: .2s all ease-in-out;
+                -o-transition: .2s all ease-in-out;
+                transition: .2s all ease-in-out;
+                @include sm{
+                    opacity: 1;
+                      position: relative;
+                }
+                .cs-btn{
+                    color:$title-color;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+
+            .cs-btn {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        &:hover {
+            .product-btn {
+                opacity: 1;
+                position: relative;
+                -webkit-transition: .2s all ease-in-out;
+                -o-transition: .2s all ease-in-out;
+                transition: .2s all ease-in-out;
+            }
+
+            -webkit-transform: scale(1.05);
+
+            -ms-transform: scale(1.05);
+
+            transform: scale(1.05);
+            -webkit-transition: .3s all ease-in-out;
+            -o-transition: .3s all ease-in-out;
+            transition: .3s all ease-in-out;
+
+            .wishlist {
+                i {
+                    color: $theme-color
+                }
+            }
+        }
+    }
+}

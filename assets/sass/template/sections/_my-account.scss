@@ -1,0 +1,125 @@
+/*** My Account Code ***/
+
+.cs-my-account {
+    background: $body-color2;
+
+    .account-content {
+        .account-text {
+            color: $gray-color3;
+        }
+
+        padding-bottom: 40px;
+
+    }
+
+    .accont-form {
+        margin-top: 10px;
+
+        label {
+            margin-bottom: 0px;
+            color: $title-color;
+            margin-top: 30px;
+            font-family: $title-font;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        input {
+            background: $white-color;
+            color: $gray-color3;
+            margin-top: 20px;
+
+
+            &::-webkit-input-placeholder {
+                color: $gray-color3;
+            }
+
+
+            &::-moz-placeholder {
+                color: $gray-color3;
+            }
+
+
+            &:-ms-input-placeholder {
+                color: $gray-color3;
+            }
+
+
+            &::-ms-input-placeholder {
+                color: $gray-color3;
+            }
+
+
+            &::placeholder {
+                color: $gray-color3;
+            }
+        }
+
+        textarea {
+            background: $white-color;
+        }
+
+        .account-btn {
+            margin-top: 40px;
+
+            .cs-btn {
+                padding: 25px 85px;
+            }
+        }
+    }
+
+    .account-img {
+        @include md {
+            margin-top: 40px;
+        }
+
+        img {
+            border-radius: 20px;
+
+            @include md {
+                width: 100%;
+            }
+        }
+    }
+
+    .account-email {
+        background: $white-color;
+        padding: 40px 80px;
+        border-radius: 20px;
+        margin-top: 120px;
+        @include vxs{
+            padding: 40px 30px;
+        }
+        .email-text {
+            color: $gray-color3;
+        }
+
+        .accont-form {
+            margin-top: 10px;
+
+            input {
+                border: 1px solid $gray-color;
+            }
+
+            .account-btn {
+                margin-top: 40px;
+
+                .cs-btn {
+                    padding: 25px 305px;
+
+                    @include md {
+                        padding: 25px 150px;
+                    }
+
+                    @include sm {
+                        padding: 20px 60px;
+                    }
+
+                    @include vxs {
+                        padding: 15px 40px;
+                    }
+                }
+            }
+        }
+    }
+}

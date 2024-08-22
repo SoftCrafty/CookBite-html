@@ -1,0 +1,17 @@
+/*** Gallery Code ***/
+
+.cs-gallery-area {
+    background: $body-color2;
+
+    .swiper {
+        border-radius: 20px;
+
+        .gallery-item {
+            img {
+                @include xs {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
