@@ -245,4 +245,5 @@
     // 13. Animation Init
     new WOW().init();
 
+   
 })(jQuery);

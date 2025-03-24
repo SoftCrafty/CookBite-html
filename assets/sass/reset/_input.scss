@@ -17,6 +17,7 @@ input {
     margin-top: 23px;
 
     &:focus {
+        color: $white-color;
         outline: 0;
         box-shadow: none;
         border-color: $theme-color;

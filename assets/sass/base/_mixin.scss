@@ -27,8 +27,8 @@
 @mixin button($background, $color, $border-color) {
     background: $background;
     color: $color;
-    padding: 17px 30px;
-    font-size: 15px;
+    padding: 12px 30px;
+    font-size: 16px;
     display: inline-block;
     position: relative;
     font-family: $title-font;

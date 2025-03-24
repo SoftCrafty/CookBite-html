@@ -20,6 +20,8 @@
         -webkit-transition: .3s all ease-in-out;
         -o-transition: .3s all ease-in-out;
         transition: .3s all ease-in-out;
+        height: 81%;
+        overflow: hidden;
 
         .product-img {
             img {
@@ -73,15 +75,7 @@
             }
 
             .product-btn {
-                opacity: 0;
-                position: absolute;
-                -webkit-transition: .2s all ease-in-out;
-                -o-transition: .2s all ease-in-out;
-                transition: .2s all ease-in-out;
-                @include sm{
-                    opacity: 1;
-                      position: relative;
-                }
+               
                 .cs-btn{
                     color:$title-color;
                     &::before{
@@ -98,13 +92,9 @@
         }
 
         &:hover {
-            .product-btn {
-                opacity: 1;
-                position: relative;
-                -webkit-transition: .2s all ease-in-out;
-                -o-transition: .2s all ease-in-out;
-                transition: .2s all ease-in-out;
-            }
+
+            height: 92%;
+           
 
             -webkit-transform: scale(1.05);
 
