@@ -47,8 +47,9 @@
                 gap: 5px;
 
                 li {
-                    a {
+                    i {
                         color: $yellow-color2;
+                        cursor: pointer;
                     }
                 }
             }

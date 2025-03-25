@@ -262,3 +262,26 @@ h6 {
 		line-height: 30px;
 	}
 }
+@include xs{
+	.h2,
+	h2 {
+		font-size: 34px;
+		line-height: 1;
+	}
+	.h1,
+	h1 {
+		font-size: 42px;
+		line-height: 1;
+	}
+}
+@include vxs{
+	.h1,
+	h1 {
+		font-size: 38px;
+	}
+	.h2,
+	h2 {
+		font-size: 29px;
+		line-height: 1;
+	}
+}

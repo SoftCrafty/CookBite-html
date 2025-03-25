@@ -348,6 +348,31 @@ h6 {
     line-height: 30px;
   }
 }
+/* Extra small devices */
+@media (max-width: 575px) {
+  .h2,
+  h2 {
+    font-size: 34px;
+    line-height: 1;
+  }
+  .h1,
+  h1 {
+    font-size: 42px;
+    line-height: 1;
+  }
+}
+/* Extra small devices */
+@media (max-width: 479px) {
+  .h1,
+  h1 {
+    font-size: 38px;
+  }
+  .h2,
+  h2 {
+    font-size: 29px;
+    line-height: 1;
+  }
+}
 /*=================================
     02. Reset
 ==================================*/
@@ -764,7 +789,7 @@ textarea.is-invalid {
     max-width: 320px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-offcanvas-wrapper .cs-offcanvas-content {
     max-width: 300px;
   }
@@ -1220,6 +1245,8 @@ textarea.is-invalid {
   display: block;
   position: relative;
   overflow: hidden;
+  border: none;
+  background: rgb(0, 131, 62) 0%;
 }
 .submit-btn:before {
   content: "";
@@ -1628,7 +1655,7 @@ textarea.is-invalid {
     padding: 40px 0px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .header-layout02 {
     padding: 35px 0px;
   }
@@ -1659,7 +1686,7 @@ textarea.is-invalid {
     padding: 40px 10px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .header-layout02 .header-logo {
     padding: 35px 10px;
     text-align: center;
@@ -1699,7 +1726,7 @@ textarea.is-invalid {
     padding: 40px 25px;
   }
 }
-@media (max-width: 1199px) and (max-width: 375px) {
+@media (max-width: 1199px) and (max-width: 479px) {
   .header-layout02 .cs-menu-toggle i {
     font-size: 35px;
     padding: 35px 15px;
@@ -1710,7 +1737,7 @@ textarea.is-invalid {
     padding: 40px 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .header-layout02 .sticky {
     padding: 35px 0;
   }
@@ -1889,7 +1916,7 @@ textarea.is-invalid {
 .cs-footer-area .footer-bottom .footer-menu ul li:last-child {
   padding-right: 0px;
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-footer-area .footer-bottom .footer-menu ul li:first-child {
     padding-right: 0px;
   }
@@ -3697,7 +3724,7 @@ textarea.is-invalid {
     line-height: 50px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-hero-banner-area .cs-banner-content .hero-title {
     font-size: 45px;
     line-height: 45px;
@@ -3779,7 +3806,7 @@ textarea.is-invalid {
     line-height: 50px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-hero-banner-area.banner-2 .cs-banner-content .hero-title {
     font-size: 45px;
     line-height: 45px;
@@ -3904,16 +3931,28 @@ textarea.is-invalid {
   background-repeat: no-repeat;
   padding: 242px 0px;
   /* Large devices */
+  /* Medium devices */
   /* Small devices */
+  /* Extra small devices */
 }
 @media (max-width: 1199px) {
   .cs-banner {
-    padding: 180px 0px;
+    padding: 150px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .cs-banner {
+    padding: 120px 0px;
   }
 }
 @media (max-width: 767px) {
   .cs-banner {
-    padding: 120px 0px;
+    padding: 80px 0px;
+  }
+}
+@media (max-width: 575px) {
+  .cs-banner {
+    padding: 50px 0px;
   }
 }
 .cs-banner .banner-breadcrumb .page-title {
@@ -4455,7 +4494,7 @@ textarea.is-invalid {
   position: relative;
   /* Extra small devices */
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .layout2 .cs-blog-item .blog-body {
     margin-left: 10px;
     margin-right: 10px;
@@ -4726,7 +4765,7 @@ textarea.is-invalid {
   height: 100%;
   /* Extra small devices */
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-booking-area .booking-text {
     padding-left: 25px;
     padding-right: 25px;
@@ -4863,7 +4902,7 @@ textarea.is-invalid {
   margin-top: 60px;
   /* Extra small devices */
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-testimonail-area .testimonail-item {
     padding: 20px;
   }
@@ -4873,7 +4912,7 @@ textarea.is-invalid {
   display: flex;
   /* Extra small devices */
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-testimonail-area .testimonail-item .testimonail-infos {
     display: block;
   }
@@ -4881,7 +4920,7 @@ textarea.is-invalid {
 .cs-testimonail-area .testimonail-item .testimonail-infos .client-meta {
   /* Extra small devices */
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-testimonail-area .testimonail-item .testimonail-infos .client-meta {
     margin-top: 20px;
   }
@@ -4946,7 +4985,7 @@ textarea.is-invalid {
     padding: 60px 30px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-testimonail-area.layout2 .testimonial-container {
     padding: 40px 20px;
   }
@@ -5258,7 +5297,7 @@ textarea.is-invalid {
     margin-top: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-counter-layout2 .counter-layout2 {
     padding: 30px;
   }
@@ -5439,7 +5478,7 @@ textarea.is-invalid {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .download-btns .donwload-btn {
     width: 100%;
   }
@@ -5482,7 +5521,7 @@ textarea.is-invalid {
     padding: 15px 30px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-popular-items .popular-filter-btns .filter-btn {
     padding: 10px 20px;
   }
@@ -5603,8 +5642,9 @@ textarea.is-invalid {
 .product-item .product-content .product-rating ul {
   gap: 5px;
 }
-.product-item .product-content .product-rating ul li a {
+.product-item .product-content .product-rating ul li i {
   color: var(--yellow-color2);
+  cursor: pointer;
 }
 
 /*** Product Sidebar Code ***/
@@ -5734,8 +5774,9 @@ textarea.is-invalid {
 .cs-shop-details-area .shop-details-content .product-rating ul {
   gap: 5px;
 }
-.cs-shop-details-area .shop-details-content .product-rating ul li a {
+.cs-shop-details-area .shop-details-content .product-rating ul li i {
   color: var(--yellow-color2);
+  cursor: pointer;
 }
 .cs-shop-details-area .shop-details-content .shop-details-quantity-wrap {
   gap: 30px;
@@ -5987,6 +6028,8 @@ textarea.is-invalid {
   padding: 25px 85px;
 }
 .cs-my-account .account-img {
+  overflow: hidden;
+  border-radius: 20px;
   /* Medium devices */
 }
 @media (max-width: 991px) {
@@ -5996,7 +6039,11 @@ textarea.is-invalid {
 }
 .cs-my-account .account-img img {
   border-radius: 20px;
+  transition: all 3s linear;
   /* Medium devices */
+}
+.cs-my-account .account-img img:hover {
+  transform: scale(1.07);
 }
 @media (max-width: 991px) {
   .cs-my-account .account-img img {
@@ -6010,7 +6057,7 @@ textarea.is-invalid {
   margin-top: 120px;
   /* Extra small devices */
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-my-account .account-email {
     padding: 40px 30px;
   }
@@ -6043,7 +6090,7 @@ textarea.is-invalid {
     padding: 20px 60px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-my-account .account-email .accont-form .account-btn .cs-btn {
     padding: 15px 40px;
   }
@@ -6066,7 +6113,7 @@ textarea.is-invalid {
   /* Large devices */
   /* Medium devices */
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-contact-area .cs-contact-form {
     padding: 30px 15px;
   }
@@ -6344,7 +6391,7 @@ textarea.is-invalid {
     top: 344%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 479px) {
   .cs-minicart-area {
     left: 60%;
     top: 350%;
@@ -6800,6 +6847,13 @@ textarea.is-invalid {
   color: var(--white-color);
 }
 
+.cs-booking-image {
+  height: 100%;
+}
+.cs-booking-image img {
+  height: 100%;
+}
+
 .product-cart {
   cursor: pointer;
 }
@@ -6817,6 +6871,43 @@ textarea.is-invalid {
   padding-top: 113px;
 }
 
+.cs-comment-form .comment-form .contact-btn .cs-btn {
+  padding: 20px 120px;
+}
+
+.cs-shop-details-area {
+  padding-bottom: 0;
+}
+
 .cs-footer-area .footer-top .widget-area .footer-title {
   padding: 15px 0px 30px 0px;
+}
+
+.cs-cart-area {
+  padding-bottom: 75px;
+}
+
+.cart-table table tbody tr td:first-child {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.cart-table table tbody tr td:last-child {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.cs-my-account {
+  padding-top: 110px;
+}
+
+.cs-my-account .accont-form .account-btn .cs-btn {
+  padding: 16px 85px;
+}
+
+.cs-my-account .account-email .accont-form .account-btn .cs-btn {
+  padding: 16px 305px;
+}
+
+.cs-contact-area .cs-contact-form .contact-form .contact-btn .cs-btn {
+  padding: 16px 120px;
 }/*# sourceMappingURL=style.css.map */

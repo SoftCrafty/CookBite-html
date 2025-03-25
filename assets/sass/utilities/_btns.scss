@@ -121,6 +121,8 @@
     display: block;
      position: relative;
       overflow: hidden;
+      border: none;
+      background: rgb(0, 131, 62) 0%;
     &:before{
         content: "";
         background: $white-color;

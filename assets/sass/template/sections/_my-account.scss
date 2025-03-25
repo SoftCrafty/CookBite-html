@@ -69,12 +69,20 @@
     }
 
     .account-img {
+        overflow: hidden;
+        border-radius: 20px;
+        
         @include md {
             margin-top: 40px;
         }
 
         img {
             border-radius: 20px;
+            transition: all 3s linear;
+
+            &:hover{
+                transform: scale(1.07);
+            }
 
             @include md {
                 width: 100%;
