@@ -11,11 +11,7 @@
     padding-bottom: 90px;
 }
 
-.cs-btn2,
-.cs-btn3 {
-    padding: 12px 30px;
-    font-size: 16px;
-}
+
 
 //best selling area
 
@@ -27,12 +23,41 @@
 // booking area
 .cs-booking-area{
     padding-top: 0;
+
+    .nice-select{
+        margin-top: 23px;
+        border-radius: 100px;
+        height: 56px;
+        border: none;
+        background-color: $green-color2;
+
+        span{
+            color: $white-color;
+        }
+    }
+
+    
 }
+.product-cart{
+    cursor: pointer;
+}
+
+
+// food menu
+.cs-food-menu {
+    padding-bottom: 355px;
+}
+
 
 // testimonial area {
 .cs-testimonail-area{
-    padding-top: 115px;
+    padding-top: 112px;
     padding-bottom: 105px;
+}
+
+// blog area 
+.cs-blog-area{
+    padding-top: 113px;
 }
 
 // footer area 

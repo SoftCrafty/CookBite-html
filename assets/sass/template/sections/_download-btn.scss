@@ -37,6 +37,8 @@
 }
 
 .download-tab-img {
+    animation: anime 5s linear infinite; 
+    position: relative;
     @include md {
         margin-top: 60px;
     }

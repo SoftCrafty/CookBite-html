@@ -11,7 +11,7 @@
         }
 
         .filter-btn {
-            padding: 25px 40px;
+            padding: 18px 40px;
             background: $white-color;
             color: $title-color;
             border-radius: 100px;
@@ -89,6 +89,7 @@
             padding: 5px 15px;
             background: transparent;
             border-color: $gray-color;
+            cursor: pointer;
             &:hover{
                     &:before{
                         background: $theme-color2;

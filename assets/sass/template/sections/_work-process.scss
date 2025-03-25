@@ -2,7 +2,7 @@
 
 .cs-work-process {
     padding-top: 190px;
-    margin-top: -70px;
+    margin-top: -78px;
     background: $white-color;
 
     .work-process {
@@ -64,6 +64,20 @@
         border-radius: 20px;
         -webkit-box-shadow: rgba(0, 0, 0, 0.0) 0px 3px 5px;
         box-shadow: rgba(0, 0, 0, 0.0) 0px 3px 5px;
+        animation: anime 5s linear infinite; 
+        position: relative;
     }
 
+}
+
+@keyframes anime {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 40px;
+    }
+    100%{
+        bottom: 0;
+    }
 }

@@ -102,7 +102,7 @@ Version: 1.0.0
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1290px;
   --container-gutters: 30px;
-  --section-space: 120px;
+  --section-space: 115px;
   --section-space-mobile: 80px;
   --section-title-space: 70px;
   --ripple-ani-duration: 5s;
@@ -1064,7 +1064,7 @@ textarea.is-invalid {
 .cs-btn {
   background: var(--button-color);
   color: var(--white-color);
-  padding: 12px 30px;
+  padding: 15px 30px;
   font-size: 16px;
   display: inline-block;
   position: relative;
@@ -1111,7 +1111,7 @@ textarea.is-invalid {
 .cs-btn2 {
   background: var(--theme-color);
   color: var(--white-color);
-  padding: 12px 30px;
+  padding: 15px 30px;
   font-size: 16px;
   display: inline-block;
   position: relative;
@@ -1158,7 +1158,7 @@ textarea.is-invalid {
 .cs-btn3 {
   background: var(--green-color);
   color: var(--white-color);
-  padding: 12px 30px;
+  padding: 15px 30px;
   font-size: 16px;
   display: inline-block;
   position: relative;
@@ -1208,7 +1208,7 @@ textarea.is-invalid {
 .submit-btn {
   background: var(--green-color2);
   color: var(--white-color);
-  padding: 12px 30px;
+  padding: 15px 30px;
   font-size: 16px;
   display: inline-block;
   position: relative;
@@ -5273,7 +5273,7 @@ textarea.is-invalid {
 /*** Work Process Code ***/
 .cs-work-process {
   padding-top: 190px;
-  margin-top: -70px;
+  margin-top: -78px;
   background: var(--white-color);
 }
 .cs-work-process .work-process {
@@ -5322,8 +5322,21 @@ textarea.is-invalid {
   padding: 58px 38px 30px 38px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 5px;
+  animation: anime 5s linear infinite;
+  position: relative;
 }
 
+@keyframes anime {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 /*** Best Offer Code ***/
 .cs-best-offer {
   background: var(--body-color2);
@@ -5433,6 +5446,8 @@ textarea.is-invalid {
 }
 
 .download-tab-img {
+  animation: anime 5s linear infinite;
+  position: relative;
   /* Medium devices */
 }
 @media (max-width: 991px) {
@@ -5455,7 +5470,7 @@ textarea.is-invalid {
   }
 }
 .cs-popular-items .popular-filter-btns .filter-btn {
-  padding: 25px 40px;
+  padding: 18px 40px;
   background: var(--white-color);
   color: var(--title-color);
   border-radius: 100px;
@@ -5530,6 +5545,7 @@ textarea.is-invalid {
   padding: 5px 15px;
   background: transparent;
   border-color: var(--gray-color);
+  cursor: pointer;
 }
 .cs-popular-items .popular-item .cs-btn2:hover:before {
   background: var(--button-color);
@@ -6765,12 +6781,6 @@ textarea.is-invalid {
   padding-bottom: 90px;
 }
 
-.cs-btn2,
-.cs-btn3 {
-  padding: 12px 30px;
-  font-size: 16px;
-}
-
 .cs-bestselling-area {
   padding-top: 110px;
   height: 922px;
@@ -6779,10 +6789,32 @@ textarea.is-invalid {
 .cs-booking-area {
   padding-top: 0;
 }
+.cs-booking-area .nice-select {
+  margin-top: 23px;
+  border-radius: 100px;
+  height: 56px;
+  border: none;
+  background-color: var(--green-color2);
+}
+.cs-booking-area .nice-select span {
+  color: var(--white-color);
+}
+
+.product-cart {
+  cursor: pointer;
+}
+
+.cs-food-menu {
+  padding-bottom: 355px;
+}
 
 .cs-testimonail-area {
-  padding-top: 115px;
+  padding-top: 112px;
   padding-bottom: 105px;
+}
+
+.cs-blog-area {
+  padding-top: 113px;
 }
 
 .cs-footer-area .footer-top .widget-area .footer-title {

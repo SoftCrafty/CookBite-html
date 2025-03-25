@@ -245,5 +245,14 @@
     // 13. Animation Init
     new WOW().init();
 
+    // veno box video player
+    new VenoBox({
+        selector: '.my-video-links',
+        });
+    
+    
+    // nice select 
+    $('select').niceSelect();
+
    
 })(jQuery);
