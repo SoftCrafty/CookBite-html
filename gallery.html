@@ -1,338 +1,626 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>CookBite</title> <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>CookBite</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.png"
+    />
     <!--==============================
 	  Google Fonts
 	============================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=ZCOOL+XiaoWei&display=swap"
+      rel="stylesheet"
+    />
     <!--==============================
 	    All CSS File
 	============================== -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css"> <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css"> <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"><!-- Swiper css -->
-    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/style.css"><!-- Theme Custom CSS -->
-</head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Theme Custom CSS -->
+  </head>
 
-<body>
+  <body>
     <!--[if lte IE 9]>
-    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  	<![endif]-->
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
     <!--********************************
    		Code Start From Here 
 	******************************** -->
 
-            <!--==============================
+    <!--==============================
      Preloader
   ============================== -->
 
     <div class="preloader">
-        <div class="preloader-grid">
-            <div class="item1"></div>
-            <div class="item2"></div>
-            <div class="item3"></div>
-            <div class="item4"></div>
-        </div>
-        <h3 class="preloader-loader-h">CookBite</h3>
+      <div class="preloader-grid">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+      </div>
+      <h3 class="preloader-loader-h">CookBite</h3>
     </div>
 
-    
     <!-- Scroll To Top   -->
-    <div class="back-to-top-wrapper"> <button id="back_to_top" type="button" class="back-to-top-btn"> <i class="fa-solid fa-arrow-up"></i> </button> </div>
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
 
     <!--==============================
 	Header Area
 ==============================-->
     <div class="cs-offcanvas-wrapper d-block">
-        <div class="cs-offcanvas-content ">
-            <div class="mobile-menu-top d-flex d-xl-none justify-content-between align-items-center">
-                <div class="mobile-logo"> <a href="index.html"><img src="assets/img/logo.svg" alt="CookBite"></a> </div> <button class="cs-close-toggle"><i class="fal fa-times"></i></button>
-            </div>
-            <div class="cs-mobile-menu py-40 d-block d-xl-none">
-                <ul>
-                    <li class="menu-item-has-children cs-mobile-item-children"> <a href="index.html">Home <span class="cs-menu-expand"></span></a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Home One</a></li>
-                            <li><a href="index-restaurant.html">Home Two</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children"> <a href="about.html">About Us</a>
-                    </li>
-                    <li class="menu-item-has-children"> <a href="reservation.html">Reservation</a>
-                    </li>
-                     <li class="menu-item-has-children cs-mobile-item-children"> <a href="#0">Blog <span class="cs-menu-expand"></span></a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog Grid</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children"> <a href="gallery.html" class="menu-active">Gallery</a>
-                    </li>
-                   
-                    <li class="menu-item-has-children cs-mobile-item-children"> <a href="#0">Pages <span class="cs-menu-expand"></span></a>
-                        <ul class="sub-menu">
-                            <li><a href="shop-details.html">Shop</a></li>
-                            <li><a href="shop-details.html">Shop Details</a></li>
-                            <li><a href="cart.html">Cart Page</a></li>
-                            <li><a href="wishlist.html">Wishlist Page</a></li>
-                            <li><a href="my-account.html">My Account</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-item-has-children"> <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="cs-dekstop-top d-none d-xl-block">
-                <div class="logo-area"> <a href="index.html"> <img src="assets/img/logo2.svg" alt="CookBite"> </a> </div> <button class="cs-dekstop-close"><i class="fal fa-times"></i></button>
-            </div>
-            <div class="instagram-gallery d-none d-xl-block">
-                <h3>Check Instagram Post</h3>
-                <div class="row pt-30">
-                    <div class="col-4 mb-20">
-                        <div class="cs-instagram-link"> <a href="assets/img/gallery/gallery-01.png" class="popup-image" data-group="gallery"><img src="assets/img/gallery/gallery-01.png" alt="instagram1"><i class="fa-brands fa-instagram"></i></a> </div>
-                    </div>
-                    <div class="col-4 mb-20">
-                        <div class="cs-instagram-link"> <a href="assets/img/gallery/gallery-02.png" class="popup-image" data-group="gallery"><img src="assets/img/gallery/gallery-02.png" alt="instagram2"><i class="fa-brands fa-instagram"></i></a> </div>
-                    </div>
-                    <div class="col-4 mb-20">
-                        <div class="cs-instagram-link"> <a href="assets/img/gallery/gallery-03.png" class="popup-image" data-group="gallery"><img src="assets/img/gallery/gallery-03.png" alt="instagram3"><i class="fa-brands fa-instagram"></i></a> </div>
-                    </div>
-                    <div class="col-4 mb-20">
-                        <div class="cs-instagram-link"> <a href="assets/img/gallery/gallery-04.png" class="popup-image" data-group="gallery"><img src="assets/img/gallery/gallery-04.png" alt="instagram4"><i class="fa-brands fa-instagram"></i></a> </div>
-                    </div>
-                    <div class="col-4 mb-20">
-                        <div class="cs-instagram-link"> <a href="assets/img/gallery/gallery-05.png" class="popup-image" data-group="gallery"><img src="assets/img/gallery/gallery-05.png" alt="instagram5"><i class="fa-brands fa-instagram"></i></a> </div>
-                    </div>
-                    <div class="col-4 mb-20">
-                        <div class="cs-instagram-link"> <a href="assets/img/gallery/gallery-06.png" class="popup-image" data-group="gallery"><img src="assets/img/gallery/gallery-06.png" alt="instagram6"><i class="fa-brands fa-instagram"></i></a> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas-btn px-30 d-none d-xl-block"> <a href="#0" class="cs-btn d-block text-center"><span>Get Started</span> </a> </div>
+      <div class="cs-offcanvas-content">
+        <div
+          class="mobile-menu-top d-flex d-xl-none justify-content-between align-items-center"
+        >
+          <div class="mobile-logo">
+            <a href="index.html"
+              ><img src="assets/img/logo.svg" alt="CookBite"
+            /></a>
+          </div>
+          <button class="cs-close-toggle"><i class="fal fa-times"></i></button>
         </div>
+        <div class="cs-mobile-menu py-40 d-block d-xl-none">
+          <ul>
+            <li class="menu-item-has-children cs-mobile-item-children">
+              <a href="index.html">Home <span class="cs-menu-expand"></span></a>
+              <ul class="sub-menu">
+                <li><a href="index.html">Home One</a></li>
+                <li><a href="index-restaurant.html">Home Two</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="about.html">About Us</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="reservation.html">Reservation</a>
+            </li>
+            <li class="menu-item-has-children cs-mobile-item-children">
+              <a href="#0">Blog <span class="cs-menu-expand"></span></a>
+              <ul class="sub-menu">
+                <li><a href="blog.html">Blog Grid</a></li>
+                <li><a href="blog-details.html">Blog Details</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="gallery.html" class="menu-active">Gallery</a>
+            </li>
+
+            <li class="menu-item-has-children cs-mobile-item-children">
+              <a href="#0">Pages <span class="cs-menu-expand"></span></a>
+              <ul class="sub-menu">
+                <li><a href="shop-details.html">Shop</a></li>
+                <li><a href="shop-details.html">Shop Details</a></li>
+                <li><a href="cart.html">Cart Page</a></li>
+                <li><a href="wishlist.html">Wishlist Page</a></li>
+                <li><a href="my-account.html">My Account</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item-has-children">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-dekstop-top d-none d-xl-block">
+          <div class="logo-area">
+            <a href="index.html">
+              <img src="assets/img/logo2.svg" alt="CookBite" />
+            </a>
+          </div>
+          <button class="cs-dekstop-close"><i class="fal fa-times"></i></button>
+        </div>
+        <div class="instagram-gallery d-none d-xl-block">
+          <h3>Check Instagram Post</h3>
+          <div class="row pt-30">
+            <div class="col-4 mb-20">
+              <div class="cs-instagram-link">
+                <a
+                  href="assets/img/gallery/gallery-01.png"
+                  class="popup-image"
+                  data-group="gallery"
+                  ><img
+                    src="assets/img/gallery/gallery-01.png"
+                    alt="instagram1" /><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-4 mb-20">
+              <div class="cs-instagram-link">
+                <a
+                  href="assets/img/gallery/gallery-02.png"
+                  class="popup-image"
+                  data-group="gallery"
+                  ><img
+                    src="assets/img/gallery/gallery-02.png"
+                    alt="instagram2" /><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-4 mb-20">
+              <div class="cs-instagram-link">
+                <a
+                  href="assets/img/gallery/gallery-03.png"
+                  class="popup-image"
+                  data-group="gallery"
+                  ><img
+                    src="assets/img/gallery/gallery-03.png"
+                    alt="instagram3" /><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-4 mb-20">
+              <div class="cs-instagram-link">
+                <a
+                  href="assets/img/gallery/gallery-04.png"
+                  class="popup-image"
+                  data-group="gallery"
+                  ><img
+                    src="assets/img/gallery/gallery-04.png"
+                    alt="instagram4" /><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-4 mb-20">
+              <div class="cs-instagram-link">
+                <a
+                  href="assets/img/gallery/gallery-05.png"
+                  class="popup-image"
+                  data-group="gallery"
+                  ><img
+                    src="assets/img/gallery/gallery-05.png"
+                    alt="instagram5" /><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-4 mb-20">
+              <div class="cs-instagram-link">
+                <a
+                  href="assets/img/gallery/gallery-06.png"
+                  class="popup-image"
+                  data-group="gallery"
+                  ><img
+                    src="assets/img/gallery/gallery-06.png"
+                    alt="instagram6" /><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-btn px-30 d-none d-xl-block">
+          <a href="#0" class="cs-btn d-block text-center"
+            ><span>Get Started</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="popup-search"><button class="searchClose"><i class="fal fa-times"></i></button>
-        <form action="#"><input type="text" placeholder="Search here..."> <button class="form-submit" type="submit"><i class="fal fa-search"></i></button></form>
+    <div class="popup-search">
+      <button class="searchClose"><i class="fal fa-times"></i></button>
+      <form action="#">
+        <input type="text" placeholder="Search here..." />
+        <button class="form-submit" type="submit">
+          <i class="fal fa-search"></i>
+        </button>
+      </form>
     </div>
     <header class="cs-header header-layout02">
-        <div class="sticky-wrapper">
-            <div class="header-logo"> <a href="index.html"><img src="assets/img/logo2.svg" alt="CookBite"></a> </div>
-            <div class=" header-top d-none d-xl-block">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <div class="cs-header-infos">
-                                <ul>
-                                    <li><a href="mailto:info@example.com"><i class="fa-solid fa-envelope"></i>info@example.com</a></li>
-                                    <li><a href="#0"><i class="fa-solid fa-location-dot"></i>6391 Elgin St. Celina, 10299</a></li>
-                                    <li><i class="fa-solid fa-clock"></i>Sunday - Friday: <span class="fw-bold">9 am - 8 pm</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="cs-header-social">
-                                <ul>
-                                    <li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="#0"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#0"><i class="fa-brands fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- Main Menu Area -->
-            <div class="menu-area">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <nav class="main-menu d-none d-xl-block">
-                                <ul>
-                                    <li class="menu-item-has-children"> <a href="#0">Home</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.html">Home One</a></li>
-                                            <li><a href="index-restaurant.html">Home Two</a></li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="about.html">About Us</a>
-                                    </li>
-                                    <li> <a href="reservation.html">Reservation</a>
-                                    </li>
-                                    <li class="menu-item-has-children"> <a href="#0">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="gallery.html" class="menu-active">Gallery</a>
-                                    </li>
-                                    <li class="menu-item-has-children"> <a href="#0">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-details.html">Shop Details</a></li>
-                                            <li><a href="cart.html">Cart Page</a></li>
-                                            <li><a href="wishlist.html">Wishlist Page</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-auto">
-                            <div class="header-icons style2 align-items-center d-flex"> <button type="button" class="cs-header-cart  d-none d-xl-block"><i class="fa-regular fa-cart-shopping"></i></button> <button type="button" class="cs-menu-toggle d-block d-xl-none"><i class="fa-sharp fa-regular fa-bars-staggered"></i></button> <button type="button" class="cs-header-search"><i class="fa-solid fa-magnifying-glass"></i></button> <button type="button" class="cs-header-pipe d-none d-xl-block"><i class="fa-thin fa-pipe"></i></button> <button type="button" class="cs-header-toggle cs-dekstop-toggle"><i class="fa-sharp fa-regular fa-bars-staggered"></i></button> <a href="reservation.html" class="cs-btn fw-normal d-none d-xl-block"><span>Book a table <i class="fa-solid fa-arrow-right"></i></span></a> </div>
-                        </div>
-                    </div>
-                </div>
-                                     <!-- Mini Cart -->
-                <div class="cs-minicart-area">
-                    <div class="minicart--item-container">
-                        <ul>
-                            <li class="minicart--item d-flex">
-                                <div class="mini-cartimage"> <img src="assets/img/products/product-01.jpg" alt=""> </div>
-                                <div class="mini-cartinfo">
-                                    <h6 class="title">Title of Product 01</h6> <span class="price">$90.00 USD (x1)</span>
-                                    <div class="remove"> <a href="#"> <i class="fa fa-trash-o"></i> Remove from cart </a> </div>
-                                </div>
-                            </li>
-                            <li class="minicart--item d-flex">
-                                <div class="mini-cartimage"> <img src="assets/img/products/product-02.jpg" alt=""> </div>
-                                <div class="mini-cartinfo">
-                                    <h6 class="title">Title of Product 01</h6> <span class="price">$90.00 USD (x1)</span>
-                                    <div class="remove"> <a href="#"> <i class="fa fa-trash-o"></i> Remove from cart </a> </div>
-                                </div>
-                            </li>
-                            <li class="minicart--item d-flex">
-                                <div class="mini-cartimage"> <img src="assets/img/products/product-03.jpg" alt=""> </div>
-                                <div class="mini-cartinfo">
-                                    <h6 class="title">Title of Product 01</h6> <span class="price">$90.00 USD (x1)</span>
-                                    <div class="remove"> <a href="#"> <i class="fa fa-trash-o"></i> Remove from cart </a> </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="minicart--subtotal my-40">
-                            <p class="minicart--subtotal-title fw-bold">Subtotal</p>
-                            <p class="minicart--subtotal-amount">$270.00 USD</p>
-                        </div> <a href="#0" class="cs-btn2 mt-20 fw-normal text-center w-100"><span>Checkout <i class="fa-solid fa-arrow-right"></i></span></a>
-                    </div>
-                </div>
-            </div>
+      <div class="sticky-wrapper">
+        <div class="header-logo">
+          <a href="index.html"
+            ><img src="assets/img/logo2.svg" alt="CookBite"
+          /></a>
         </div>
+        <div class="header-top d-none d-xl-block">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
+                <div class="cs-header-infos">
+                  <ul>
+                    <li>
+                      <a href="mailto:info@example.com"
+                        ><i class="fa-solid fa-envelope"></i>info@example.com</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#0"
+                        ><i class="fa-solid fa-location-dot"></i>6391 Elgin St.
+                        Celina, 10299</a
+                      >
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-clock"></i>Sunday - Friday:
+                      <span class="fw-bold">9 am - 8 pm</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="cs-header-social">
+                  <ul>
+                    <li>
+                      <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main Menu Area -->
+        <div class="menu-area">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
+                <nav class="main-menu d-none d-xl-block">
+                  <ul>
+                    <li class="menu-item-has-children">
+                      <a href="#0">Home</a>
+                      <ul class="sub-menu">
+                        <li><a href="index.html">Home One</a></li>
+                        <li><a href="index-restaurant.html">Home Two</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#0">Blog</a>
+                      <ul class="sub-menu">
+                        <li><a href="blog-grid.html">Blog Grid</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="gallery.html" class="menu-active">Gallery</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#0">Pages</a>
+                      <ul class="sub-menu">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="shop-details.html">Shop Details</a></li>
+                        <li><a href="cart.html">Cart Page</a></li>
+                        <li><a href="wishlist.html">Wishlist Page</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-auto">
+                <div class="header-icons style2 align-items-center d-flex">
+                  <button
+                    type="button"
+                    class="cs-header-cart d-none d-xl-block"
+                  >
+                    <i class="fa-regular fa-cart-shopping"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="cs-menu-toggle d-block d-xl-none"
+                  >
+                    <i class="fa-sharp fa-regular fa-bars-staggered"></i>
+                  </button>
+                  <button type="button" class="cs-header-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="cs-header-pipe d-none d-xl-block"
+                  >
+                    <i class="fa-thin fa-pipe"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="cs-header-toggle cs-dekstop-toggle"
+                  >
+                    <i class="fa-sharp fa-regular fa-bars-staggered"></i>
+                  </button>
+                  <a
+                    href="reservation.html"
+                    class="cs-btn fw-normal d-none d-xl-block"
+                    ><span
+                      >Book a table
+                      <i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mini Cart -->
+          <div class="cs-minicart-area">
+            <div class="minicart--item-container">
+              <ul>
+                <li class="minicart--item d-flex">
+                  <div class="mini-cartimage">
+                    <img src="assets/img/products/product-01.jpg" alt="" />
+                  </div>
+                  <div class="mini-cartinfo">
+                    <h6 class="title">Title of Product 01</h6>
+                    <span class="price">$90.00 USD (x1)</span>
+                    <div class="remove">
+                      <a href="#">
+                        <i class="fa fa-trash-o"></i> Remove from cart
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="minicart--item d-flex">
+                  <div class="mini-cartimage">
+                    <img src="assets/img/products/product-02.jpg" alt="" />
+                  </div>
+                  <div class="mini-cartinfo">
+                    <h6 class="title">Title of Product 01</h6>
+                    <span class="price">$90.00 USD (x1)</span>
+                    <div class="remove">
+                      <a href="#">
+                        <i class="fa fa-trash-o"></i> Remove from cart
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="minicart--item d-flex">
+                  <div class="mini-cartimage">
+                    <img src="assets/img/products/product-03.jpg" alt="" />
+                  </div>
+                  <div class="mini-cartinfo">
+                    <h6 class="title">Title of Product 01</h6>
+                    <span class="price">$90.00 USD (x1)</span>
+                    <div class="remove">
+                      <a href="#">
+                        <i class="fa fa-trash-o"></i> Remove from cart
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="minicart--subtotal my-40">
+                <p class="minicart--subtotal-title fw-bold">Subtotal</p>
+                <p class="minicart--subtotal-amount">$270.00 USD</p>
+              </div>
+              <a href="#0" class="cs-btn2 mt-20 fw-normal text-center w-100"
+                ><span>Checkout <i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!--==============================
 	Banner Area
 ==============================-->
     <section>
-        <div class="cs-banner">
-            <div class="container">
-                <div class="banner-breadcrumb">
-                    <h2 class="page-title h1">Gallery</h2> <span class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i> Gallery</span>
-                </div>
-            </div>
+      <div class="cs-banner">
+        <div class="container">
+          <div class="banner-breadcrumb">
+            <h2 class="page-title h1">Gallery</h2>
+            <span class="breadcrumb"
+              ><a href="index.html">Home</a>
+              <i class="fa-solid fa-angle-right"></i> Gallery</span
+            >
+          </div>
         </div>
+      </div>
     </section>
     <!--==============================
                         	Best Offer
                         ==============================-->
     <section>
-        <div class="cs-best-offer space space-mobile space-mobile-extra">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-sm-6 " >
-                        <div class="offer-item wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s"> <img src="assets/img/best-offer/best-offer1.png" alt="best offer image">
-                            <div class="offer-text"> <span>Taste Haven</span>
-                                <h4>Elevate your taste buds</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mt-30 mt-sm-0">
-                        <div class="offer-item wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s"> <img src="assets/img/best-offer/best-offer2.png" alt="best offer image">
-                            <div class="offer-text"> <span>Taste Haven</span>
-                                <h4>Elevate your taste buds</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mt-30 mt-lg-0">
-                        <div class="offer-item wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s"> <img src="assets/img/best-offer/best-offer3.png" alt="best offer image">
-                            <div class="offer-text"> <span>Taste Haven</span>
-                                <h4>Elevate your taste buds</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="offer-item mt-30 wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s"> <img src="assets/img/best-offer/best-offer4.png" alt="best offer image">
-                            <div class="offer-text"> <span>Taste Haven</span>
-                                <h4>Elevate your taste buds</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="offer-item mt-30 wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s"> <img src="assets/img/best-offer/best-offer5.png" alt="best offer image">
-                            <div class="offer-text"> <span>Taste Haven</span>
-                                <h4>Elevate your taste buds</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="offer-item mt-30 wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s"> <img src="assets/img/best-offer/best-offer6.png" alt="best offer image">
-                            <div class="offer-text"> <span>Taste Haven</span>
-                                <h4>Elevate your taste buds</h4>
-                            </div>
-                        </div>
-                    </div>
+      <div class="cs-best-offer space space-mobile space-mobile-extra">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+              <div
+                class="offer-item wow slideInUp"
+                data-wow-duration=".5s"
+                data-wow-delay=".5s"
+              >
+                <img
+                  src="assets/img/best-offer/best-offer1.png"
+                  alt="best offer image"
+                />
+                <div class="offer-text">
+                  <span>Taste Haven</span>
+                  <h4>Elevate your taste buds</h4>
                 </div>
+              </div>
             </div>
+            <div class="col-lg-4 col-sm-6 mt-30 mt-sm-0">
+              <div
+                class="offer-item wow slideInUp"
+                data-wow-duration=".5s"
+                data-wow-delay=".5s"
+              >
+                <img
+                  src="assets/img/best-offer/best-offer2.png"
+                  alt="best offer image"
+                />
+                <div class="offer-text">
+                  <span>Taste Haven</span>
+                  <h4>Elevate your taste buds</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt-30 mt-lg-0">
+              <div
+                class="offer-item wow slideInUp"
+                data-wow-duration=".5s"
+                data-wow-delay=".5s"
+              >
+                <img
+                  src="assets/img/best-offer/best-offer3.png"
+                  alt="best offer image"
+                />
+                <div class="offer-text">
+                  <span>Taste Haven</span>
+                  <h4>Elevate your taste buds</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div
+                class="offer-item mt-30 wow slideInUp"
+                data-wow-duration=".5s"
+                data-wow-delay=".5s"
+              >
+                <img
+                  src="assets/img/best-offer/best-offer4.png"
+                  alt="best offer image"
+                />
+                <div class="offer-text">
+                  <span>Taste Haven</span>
+                  <h4>Elevate your taste buds</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div
+                class="offer-item mt-30 wow slideInUp"
+                data-wow-duration=".5s"
+                data-wow-delay=".5s"
+              >
+                <img
+                  src="assets/img/best-offer/best-offer5.png"
+                  alt="best offer image"
+                />
+                <div class="offer-text">
+                  <span>Taste Haven</span>
+                  <h4>Elevate your taste buds</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div
+                class="offer-item mt-30 wow slideInUp"
+                data-wow-duration=".5s"
+                data-wow-delay=".5s"
+              >
+                <img
+                  src="assets/img/best-offer/best-offer6.png"
+                  alt="best offer image"
+                />
+                <div class="offer-text">
+                  <span>Taste Haven</span>
+                  <h4>Elevate your taste buds</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--==============================
                                             Newsletter
                                                 ==============================-->
     <section>
-        <div class="cs-newsletter-area space space-mobile space-mobile-extra pt-0">
-            <div class="container">
-                <div class="newsletter-form gr-bg6">
-                    <div class="">
-                        <div class="col-12 col-lg-6">
-                            <div class="cs-content-area"> <span class="content-subtitle style2 wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s">GET 30% OFF</span>
-                                <h2 class="content-title style2 wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s">Join Us For Hot offer</h2>
-                                <p class="content-text mt-0 pt-15 style2 wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s">It is a long established fact that a reader will be distracted by the readable the content of a page when looking </p>
-                            </div>
-                            <div class="subsribe-form wow slideInUp" data-wow-duration=".5s" data-wow-delay=".5s">
-                                <form action="/">
-                                    <div class="row px-0 align-items-center">
-                                        <div class="col-12 col-sm-7 col-md-6"> <input type="email" class="form-control" id="subscribeFormControlInput" placeholder="Enter Your Email"> </div>
-                                        <div class="col-12 col-sm-5 col-md-6">
-                                            <div class="newsletter-submit"> <button type="submit" class="cs-btn"><span>Subscribe <i class="fa-solid fa-arrow-right"></i> </span></button> </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+      <div
+        class="cs-newsletter-area space space-mobile space-mobile-extra pt-0"
+      >
+        <div class="container">
+          <div class="newsletter-form gr-bg6">
+            <div class="">
+              <div class="col-12 col-lg-6">
+                <div class="cs-content-area">
+                  <span
+                    class="content-subtitle style2 wow slideInUp"
+                    data-wow-duration=".5s"
+                    data-wow-delay=".5s"
+                    >GET 30% OFF</span
+                  >
+                  <h2
+                    class="content-title style2 wow slideInUp"
+                    data-wow-duration=".5s"
+                    data-wow-delay=".5s"
+                  >
+                    Join Us For Hot offer
+                  </h2>
+                  <p
+                    class="content-text mt-0 pt-15 style2 wow slideInUp"
+                    data-wow-duration=".5s"
+                    data-wow-delay=".5s"
+                  >
+                    It is a long established fact that a reader will be
+                    distracted by the readable the content of a page when
+                    looking
+                  </p>
                 </div>
+                <div
+                  class="subsribe-form wow slideInUp"
+                  data-wow-duration=".5s"
+                  data-wow-delay=".5s"
+                >
+                  <form action="/">
+                    <div class="row px-0 align-items-center">
+                      <div class="col-12 col-sm-7 col-md-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="subscribeFormControlInput"
+                          placeholder="Enter Your Email"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-5 col-md-6">
+                        <div class="newsletter-submit">
+                          <button type="submit" class="cs-btn">
+                            <span
+                              >Subscribe <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--==============================
                                         Gallery Slider
                                                 ==============================-->
     <div class="cs-gallery-area arrow-wrap">
-        <div class="container">
-            <div class="slider-area">
-                <div class="swiper cs-slider" id="gallerySlider" data-slider-options='{
+      <div class="container">
+        <div class="slider-area">
+          <div
+            class="swiper cs-slider"
+            id="gallerySlider"
+            data-slider-options='{
                 "breakpoints": {
                     "0": {"slidesPerView": 1, "spaceBetween": 0},
                     "576": {"slidesPerView": 2, "spaceBetween": 0},
@@ -340,133 +628,225 @@
                     "992": {"slidesPerView": 3, "spaceBetween": 0},
                     "1200": {"slidesPerView": 4, "spaceBetween": 0}
                 }
-            }'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-01.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-02.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-03.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-04.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-04.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-04.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-01.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-02.png" alt="gallery image"> </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery-item"> <img src="assets/img/gallery/gallery-03.png" alt="gallery image"> </div>
-                        </div>
-                    </div>
-                </div> <!-- Navigation --> <button data-slider-prev="#gallerySlider" class="slider-arrow slider-prev"> <i class="fa-regular fa-angle-left"></i> </button> <button data-slider-next="#gallerySlider" class="slider-arrow slider-next"> <i class="fa-regular fa-angle-right"></i> </button>
+            }'
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-01.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-02.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-03.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-04.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-04.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-04.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-01.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-02.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <img
+                    src="assets/img/gallery/gallery-03.png"
+                    alt="gallery image"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+          <!-- Navigation -->
+          <button
+            data-slider-prev="#gallerySlider"
+            class="slider-arrow slider-prev"
+          >
+            <i class="fa-regular fa-angle-left"></i>
+          </button>
+          <button
+            data-slider-next="#gallerySlider"
+            class="slider-arrow slider-next"
+          >
+            <i class="fa-regular fa-angle-right"></i>
+          </button>
         </div>
+      </div>
     </div>
     <!--==============================
             Footer
         ============================== -->
-        <footer>
-            <div class="cs-footer-area">
-                <div class="container">
-                    <div class="footer-top text-center text-md-start">
-                        <div class="row justify-content-center justify-content-md-between align-items-top">
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-10">
-                                <div class="widget-area">
-                                    <div class="footer-logo"> <a href="index.html"><img src="assets/img/logo.svg" alt=""></a> </div>
-                                    <h1 class="footer-title">Join Us For Hot Offer</h1>
-                                    <div class="widget-social">
-                                        <ul>
-                                            <li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="#0"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#0"><i class="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#0"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-auto col-md-6">
-                                <div class="widget-area">
-                                    <h4 class="widget-title">Product</h4>
-                                    <ul class="widget-menu">
-                                        <li> <a href="gallery.html">Speedy Bites</a> </li>
-                                        <li> <a href="shop.html">Speedy Pizza</a> </li>
-                                        <li> <a href="shop.html">Chicken Fries</a> </li>
-                                        <li> <a href="shop.html">Chicken Burger</a> </li>
-                                        <li> <a href="shop.html">Rapid Grill</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-auto col-md-6 ">
-                                <div class="widget-area">
-                                    <h4 class="widget-title">Quick links</h4>
-                                    <ul class="widget-menu">
-                                        <li> <a href="about.html">About Us</a> </li>
-                                        <li> <a href="about.html">Service</a> </li>
-                                        <li> <a href="contact.html">Contact Us</a> </li>
-                                        <li> <a href="blog-grid.html">Blog Post</a> </li>
-                                        <li> <a href="contact.html">Pricing</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-auto col-md-6 ">
-                                <div class="widget-area">
-                                    <h4 class="widget-title">Opening Hours</h4>
-                                    <ul class="widget-menu">
-                                        <li>Monday : 8am – 4pm</li>
-                                        <li>Saturday: 8am – 12am</li>
-                                        <li>Friday: 8am – 12am</li>
-                                        <li>Sunday: 1Pm – 12pm</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-lg-6">
-                                <p class="copyright-text text-center text-lg-start"><i class="fa-regular fa-copyright"></i> <a href="https://themeforest.net/user/softcrafty/portfolio">SoftCrafty</a> 2025 | All Rights Reserved </p>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="footer-menu text-center text-md-start">
-                                    <ul>
-                                        <li><a href="contact.html">Trams & Condition</a></li>
-                                        <li><a href="about.html">Privacy Policy</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <footer>
+      <div class="cs-footer-area">
+        <div class="container">
+          <div class="footer-top text-center text-md-start">
+            <div
+              class="row justify-content-center justify-content-md-between align-items-top"
+            >
+              <div class="col-xl-3 col-lg-4 col-md-6 col-10">
+                <div class="widget-area">
+                  <div class="footer-logo">
+                    <a href="index.html"
+                      ><img src="assets/img/logo.svg" alt=""
+                    /></a>
+                  </div>
+                  <h1 class="footer-title">Join Us For Hot Offer</h1>
+                  <div class="widget-social">
+                    <ul>
+                      <li>
+                        <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#0"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#0"><i class="fa-brands fa-linkedin"></i></a>
+                      </li>
+                      <li>
+                        <a href="#0"
+                          ><i class="fa-brands fa-pinterest-p"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              <div class="col-lg-auto col-md-6">
+                <div class="widget-area">
+                  <h4 class="widget-title">Product</h4>
+                  <ul class="widget-menu">
+                    <li><a href="gallery.html">Speedy Bites</a></li>
+                    <li><a href="shop.html">Speedy Pizza</a></li>
+                    <li><a href="shop.html">Chicken Fries</a></li>
+                    <li><a href="shop.html">Chicken Burger</a></li>
+                    <li><a href="shop.html">Rapid Grill</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-auto col-md-6">
+                <div class="widget-area">
+                  <h4 class="widget-title">Quick links</h4>
+                  <ul class="widget-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="blog-grid.html">Blog Post</a></li>
+                    <li><a href="contact.html">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-auto col-md-6">
+                <div class="widget-area">
+                  <h4 class="widget-title">Opening Hours</h4>
+                  <ul class="widget-menu">
+                    <li>Monday : 8am – 4pm</li>
+                    <li>Saturday: 8am – 12am</li>
+                    <li>Friday: 8am – 12am</li>
+                    <li>Sunday: 1Pm – 12pm</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+          <div class="footer-bottom">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-6">
+                <p class="copyright-text text-center text-lg-start">
+                  <i class="fa-regular fa-copyright"></i>
+                  <a href="https://themeforest.net/user/softcrafty/portfolio"
+                    >SoftCrafty</a
+                  >
+                  2025 | All Rights Reserved
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-menu text-center text-md-start">
+                  <ul>
+                    <li><a href="contact.html">Trams & Condition</a></li>
+                    <li><a href="about.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--==============================
         All Js File
     ============================== -->
-    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script><!-- jQuery -->
-    <script src="assets/js/swiper-bundle.min.js"></script><!-- Swiper JS -->
-    <script src="assets/js/bootstrap.min.js"></script><!-- Bootstrap -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script><!-- Magnific Popup -->
-    <script src="assets/js/jquery.counterup.min.js"></script><!-- Counter Up -->
-    <script src="assets/js/jquery-ui.min.js"></script><!-- Range Slider -->
-    <script src="assets/js/mixitup.min.js"></script><!-- Mixitup Slider -->
-    <script src="assets/js/ScrollTrigger.min.js"></script><!-- ScrollTrigger -->
-    <script src="assets/js/wow.min.js"></script><!-- Wow Animation -->
-    <script src="assets/js/smooth-scroll.js"></script><!-- Smooth Scroll -->
-    <script src="assets/js/jquery.easing.min.js"></script><!-- Easing -->
-    <script src="assets/js/main.js"></script><!-- Main JS File -->
-</body>
-
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- jQuery -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/mixitup.min.js"></script>
+    <!-- Mixitup Slider -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Wow Animation -->
+    <script src="assets/js/smooth-scroll.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- Easing -->
+    <script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+  </body>
 </html>

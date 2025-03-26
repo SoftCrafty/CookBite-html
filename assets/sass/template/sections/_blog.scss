@@ -104,6 +104,8 @@
             .cs-btn{
                 color:$title-color;
                 &:hover{
+                    color: $theme-color;
+                    
                     &::before{
                         display: none;
                     }

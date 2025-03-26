@@ -147,7 +147,7 @@
         background: transparent;
         border: 1px solid $theme-color2;
         color: $title-color;
-        padding: 20px 60px;
+        padding: 16px 60px;
 
         &:before{
             display: none;
@@ -156,7 +156,6 @@
             background: $theme-color2;
             border: 1px solid $theme-color2;
             color: $white-color;
-            padding: 20px 60px;
             border-radius: 100px !important;
         }
     }

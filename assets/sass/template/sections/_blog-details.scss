@@ -3,9 +3,16 @@
 .cs-blog-details-area{
     background: $body-color2;
     .single-blog-image{
+        overflow: hidden;
+        border-radius: 20px;        
         img{
             width: 100%;
             border-radius: 20px;
+            transition: all 4s linear;
+            
+            &:hover{
+                transform: scale(1.07);
+            }
         }
     }
     .single-blog-meta{

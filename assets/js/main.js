@@ -254,5 +254,10 @@
     // nice select 
     $('select').niceSelect();
 
+    //date picker
+    $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+
    
 })(jQuery);

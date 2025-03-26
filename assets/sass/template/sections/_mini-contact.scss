@@ -95,6 +95,10 @@
                     display: block;
                     color: $title-color;
 
+                    &:hover{
+                        color: $theme-color;
+                    }
+
                     &:first-of-type {
                         padding-top: 10px;
                     }

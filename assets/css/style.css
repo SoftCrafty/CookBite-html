@@ -4467,6 +4467,9 @@ textarea.is-invalid {
 .cs-blog-item .blog-body .cs-btn {
   color: var(--title-color);
 }
+.cs-blog-item .blog-body .cs-btn:hover {
+  color: var(--theme-color);
+}
 .cs-blog-item .blog-body .cs-btn:hover::before {
   display: none;
 }
@@ -4513,9 +4516,17 @@ textarea.is-invalid {
 .cs-blog-details-area {
   background: var(--body-color2);
 }
+.cs-blog-details-area .single-blog-image {
+  overflow: hidden;
+  border-radius: 20px;
+}
 .cs-blog-details-area .single-blog-image img {
   width: 100%;
   border-radius: 20px;
+  transition: all 4s linear;
+}
+.cs-blog-details-area .single-blog-image img:hover {
+  transform: scale(1.07);
 }
 .cs-blog-details-area .single-blog-meta a i {
   color: var(--button-color);
@@ -5131,6 +5142,9 @@ textarea.is-invalid {
   display: block;
   color: var(--title-color);
 }
+.style2 .mini-contact .contact-item .contact-info > a:hover {
+  color: var(--theme-color);
+}
 .style2 .mini-contact .contact-item .contact-info > a:first-of-type {
   padding-top: 10px;
 }
@@ -5509,7 +5523,7 @@ textarea.is-invalid {
   }
 }
 .cs-popular-items .popular-filter-btns .filter-btn {
-  padding: 18px 40px;
+  padding: 16px 40px;
   background: var(--white-color);
   color: var(--title-color);
   border-radius: 100px;
@@ -5839,7 +5853,7 @@ textarea.is-invalid {
   background: transparent;
   border: 1px solid var(--button-color);
   color: var(--title-color);
-  padding: 20px 60px;
+  padding: 16px 60px;
 }
 .cs-shop-description-area .cs-btn:before {
   display: none;
@@ -5848,7 +5862,6 @@ textarea.is-invalid {
   background: var(--button-color);
   border: 1px solid var(--button-color);
   color: var(--white-color);
-  padding: 20px 60px;
   border-radius: 100px !important;
 }
 .cs-shop-description-area .shop-long-description p {
