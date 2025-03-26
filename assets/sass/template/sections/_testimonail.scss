@@ -10,6 +10,10 @@
         border-radius: 20px;
         margin-top: 60px;
 
+        @include md{
+            margin-top: 46px;
+        }
+
         @include vxs {
             padding: 20px;
         }
@@ -63,9 +67,17 @@
             line-height: 36px;
             color: $gray-color3;
 
-            @include xs {
+            @include lg{
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+            @include sm {
                 font-size: 18px;
-                line-height: 30px;
+            }
+            @include vxs{
+                font-size: 16px;
+                line-height: 1.6;
             }
         }
 

@@ -17,6 +17,10 @@
             padding: 60px 40px;
         }
 
+        @include vxs{
+            padding: 50px 20px;
+        }
+
 
         .subsribe-form {
             margin-top: 25px;

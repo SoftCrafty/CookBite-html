@@ -39,6 +39,12 @@
             .category-name {
 
                 margin-top: auto;
+
+                br{
+                    @include lg{
+                        display: none;
+                    }
+                }
             }
         }
     }

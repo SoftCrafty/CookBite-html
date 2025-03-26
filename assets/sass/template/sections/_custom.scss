@@ -1,6 +1,19 @@
 
 .cs-clientlogo-area{
     padding-top: 112px;
+
+    @include lg{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include sm{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include vxs{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
 }
 
 
@@ -9,6 +22,11 @@
 .cs-about-area {
     padding-top: 90px;
     padding-bottom: 90px;
+
+    @include md{
+        padding-top: 70px;
+        padding-bottom: 32px;
+    }
 }
 
 
@@ -18,6 +36,11 @@
 .cs-bestselling-area{
     padding-top: 110px;
     height: 922px;
+
+    @include md{
+        padding-top: 72px;
+        height: 100%;
+    }
 }
 
 // booking area
@@ -59,11 +82,20 @@
 .cs-testimonail-area{
     padding-top: 112px;
     padding-bottom: 105px;
+
+    @include md{
+        padding-top: 72px;
+        padding-bottom: 62px;
+    }
 }
 
 // blog area 
 .cs-blog-area{
     padding-top: 113px;
+
+    @include md{
+        padding-top: 72px;
+    }
 }
 
 // blog-details{
@@ -78,6 +110,9 @@
 }
 
 // footer area 
+.widget-area-logo {
+    margin-top: -15px;
+}
 .cs-footer-area .footer-top .widget-area .footer-title {
     padding: 15px 0px 30px 0px;
 }

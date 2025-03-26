@@ -5,6 +5,10 @@
     z-index: 2;
     padding-bottom: 350px;
 
+    @include md{
+        padding-bottom: 310px;
+    }
+
     .offer-imgbox {
         @include md {
             margin-bottom: 60px;

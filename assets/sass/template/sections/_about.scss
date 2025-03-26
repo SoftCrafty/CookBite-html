@@ -7,7 +7,7 @@
         text-align: right;
 
         @include sm {
-            margin-top: 60px;
+            margin-top: 30px;
         }
     }
 
@@ -24,7 +24,11 @@
 
         @include md {
             padding-left: 0px;
-            margin-top: 60px;
+            margin-top: 30px;
+        }
+        @include sm{
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .abt-counterbox {
@@ -39,6 +43,7 @@
                 -ms-flex-pack: end;
                 justify-content: end;
                 gap: 10px;
+                justify-content: center !important;
 
                 .counter-img {
                     img {
@@ -54,6 +59,10 @@
                 text-align: right;
                 color: $gray-color3;
                 padding-top: 10px;
+
+                @include sm{
+                    text-align: center;
+                }
             }
         }
 

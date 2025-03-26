@@ -28,6 +28,10 @@
 
     .cs-btn2 {
         margin-top: 35px;
+
+        @include lg{
+            margin-top: 20px;
+        }
     }
 
     .cs-btn3 {

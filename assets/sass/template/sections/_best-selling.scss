@@ -7,9 +7,9 @@
     @include md{
         height: 1385px;
     }
-    @include sm{
+    @include md{
         height: 100%;
-        padding-bottom: 120px  !important;
+        padding-bottom: 10px  !important;
     }
     .selling-product {  
         background: $white-color;
@@ -23,6 +23,17 @@
         height: 81%;
         overflow: hidden;
 
+        @include md{
+            margin-top: 30px;
+        }
+
+       @include sm{
+        height: 85%;
+        padding-bottom: 40px;
+       }
+       @include xs{
+        height: 83%;
+       }
         .product-img {
             img {
                 width: 100%;
@@ -76,6 +87,9 @@
 
             .product-btn {
                
+                @include sm{
+                    margin-top: 15px;
+                }
                 .cs-btn{
                     color:$title-color;
                     &::before{

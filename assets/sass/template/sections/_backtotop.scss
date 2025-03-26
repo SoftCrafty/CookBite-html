@@ -4,11 +4,8 @@
     position: fixed;
     right: 20px;
     bottom: 0;
-    height: 44px;
-    width: 44px;
+    display: inline-block;    
     cursor: pointer;
-    display: block;
-    border-radius: 50%;
     z-index: 9999;
     opacity: 0;
     visibility: hidden;

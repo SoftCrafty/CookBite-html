@@ -20,6 +20,11 @@
         flex-direction: column;
         overflow: hidden;
 
+        @include vxs{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
         .menu-body {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -33,6 +38,11 @@
 
             .menu-content {
                 margin-top: auto;
+
+                @include vxs{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
 
             .menu-content2 {
@@ -43,6 +53,10 @@
                 @include xs {
                     padding-left: 50px;
                     padding-top: 60px;
+                }
+                @include vxs{
+                    padding-left: 0;
+                    padding-right: 0;
                 }
             }
         }
