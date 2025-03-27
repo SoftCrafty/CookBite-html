@@ -158,6 +158,10 @@
             z-index: 9;
             position: relative;
 
+            @include md{
+                margin: -30px 10px 0 10px;
+            }
+
             @include vxs {
                 margin-left: 10px;
                 margin-right: 10px;

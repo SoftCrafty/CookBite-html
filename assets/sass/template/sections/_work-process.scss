@@ -4,9 +4,20 @@
     padding-top: 190px;
     margin-top: -78px;
     background: $white-color;
+    @include xs{
+        margin-top: -116px;
+    }
 
     .work-process {
         margin-top: 40px;
+
+        @include xs{
+            margin-top: 20px;
+
+        }
+        @include vxs{
+            margin-top: 12px;
+        }
 
         .process-item {
             gap: 20px;
@@ -17,6 +28,15 @@
             -webkit-box-shadow: rgba(0, 0, 0, 0.0) 0px 3px 5px;
             box-shadow: rgba(0, 0, 0, 0.0) 0px 3px 5px;
             margin-bottom: 30px;
+
+            @include lg{
+                margin-bottom: 0;
+                padding-bottom: 0px;
+            }
+            @include vxs{
+                padding-left: 0;
+                padding-right: 0;
+            }
 
             &:last-child {
                 margin-bottom: 0px;
@@ -37,6 +57,18 @@
 
                     i {
                         font-size: 30px;
+
+                        @include sm{
+                            font-size: 22px;
+                        }
+                    }
+
+                    @include sm{
+                        height: 60px;
+                        width: 60px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
 
@@ -66,6 +98,10 @@
         box-shadow: rgba(0, 0, 0, 0.0) 0px 3px 5px;
         animation: anime 5s linear infinite; 
         position: relative;
+
+        @include md{
+            margin-top: 70px;
+        }
     }
 
 }

@@ -118,6 +118,9 @@
             -webkit-transition: .3s all ease-in-out;
             -o-transition: .3s all ease-in-out;
             transition: .3s all ease-in-out;
+            @include xs{
+                transform: scale(1);
+            }
 
             .wishlist {
                 i {

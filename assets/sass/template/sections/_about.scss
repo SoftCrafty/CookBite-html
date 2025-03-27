@@ -60,6 +60,10 @@
                 color: $gray-color3;
                 padding-top: 10px;
 
+                @include lg{
+                    text-align: left;
+                }
+
                 @include sm{
                     text-align: center;
                 }

@@ -37,6 +37,10 @@
     padding-top: 110px;
     height: 922px;
 
+    @include lg{
+        height: 870px;
+    }
+
     @include md{
         padding-top: 72px;
         height: 100%;
