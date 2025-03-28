@@ -122,6 +122,12 @@
     padding-bottom: 0;
 }
 
+.cs-gallery-product-img{
+    @include md{
+        text-align: center;
+    }
+}
+
 // footer area 
 .widget-area-logo {
     margin-top: -15px;
@@ -166,3 +172,4 @@
     padding: 16px 120px;
 
 }
+

@@ -7328,6 +7328,15 @@ textarea.is-invalid {
   padding-bottom: 0;
 }
 
+.cs-gallery-product-img {
+  /* Medium devices */
+}
+@media (max-width: 991px) {
+  .cs-gallery-product-img {
+    text-align: center;
+  }
+}
+
 .widget-area-logo {
   margin-top: -15px;
 }
