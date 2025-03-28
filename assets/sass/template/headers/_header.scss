@@ -256,9 +256,22 @@
     .sticky {
         
         .header-logo {
-            padding: 0 32px;
+            padding: 0 35px;
+            @include xl{
+                padding: 0 41px;
+            }
+
+            @include lg{
+                padding: 0 27px;
+            }
+            @include md{
+                padding: 0 35px;
+            }
 
             @include sm{
+                padding: 0 30px;
+            }
+            @include xs{
                 padding: 0 12px;
             }
         }
@@ -278,12 +291,22 @@
         -ms-flex-align: center;
         align-items: center;
 
+        @include xl{
+            padding: 54px 41px;
+        }
+
         @include lg {
             top: 0;
-            padding: 50px 20px;
+            padding: 50px 27px;
+        }
+        @include md{
+            padding: 50px 35px;
         }
 
         @include sm {
+            padding: 40px 30px;
+        }
+        @include xs {
             padding: 40px 12px;
         }
 
@@ -326,7 +349,21 @@
                 padding: 50px 35px;
                 cursor: pointer;
 
+                @include xl{
+                    padding: 50px 41px;
+                }
+                @include lg{
+                    padding: 50px 27px;
+                }
+                @include md{
+                    padding: 50px 35px;
+                }
+
                 @include sm {
+                    font-size: 40px;
+                    padding: 40px 30px;
+                }
+                @include xs {
                     font-size: 40px;
                     padding: 40px 12px;
                 }

@@ -106,8 +106,17 @@
 
 .cs-comment-form .comment-form .contact-btn .cs-btn {
     padding: 20px 120px;
+
+    @include xs{
+        padding: 16px 60px;
+    }
 }
 
+.cs-blog-details-area{
+    @include md{
+        padding-bottom: 38px;
+    }
+}
 // shop details
 .cs-shop-details-area{
     padding-bottom: 0;
