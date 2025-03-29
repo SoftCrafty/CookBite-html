@@ -29,6 +29,10 @@
             color: $gray-color3;
             margin-top: 20px;
 
+            @include md{
+                margin-top: 10px;
+            }
+
 
             &::-webkit-input-placeholder {
                 color: $gray-color3;

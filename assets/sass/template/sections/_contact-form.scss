@@ -23,6 +23,9 @@
         @include md {
             width: 100%;
         }
+        @include xs{
+            padding: 40px 15px;
+        }
 
         .contact-form {
             margin-top: 40px;
@@ -51,7 +54,7 @@
                 margin-top: 0px;
 
                 @include sm {
-                    margin-top: 0px !important;
+                    margin-top: 20px ;
                     
                 }
 
@@ -65,13 +68,14 @@
                 margin-top: 10px;
 
                 .cs-btn {
-                    padding: 25px 120px;
+                    padding: 16px 120px;
                     background: $gold-color;
                     border-color: $gold-color;
                     margin-top: 20px;
 
                     @include xs {
-                        padding: 20px 60px;
+                        padding: 20px 0px;
+                        width: 100%;
                     }
                 }
             }

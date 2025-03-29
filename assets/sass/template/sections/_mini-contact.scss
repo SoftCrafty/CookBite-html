@@ -36,7 +36,7 @@
 
             .contact-icon {
                 @include sm {
-                    margin-bottom: 20px;
+                    margin-bottom: 00px;
                 }
 
                 >a {
@@ -93,9 +93,21 @@
                     color: $gold-color;
                     line-height: 95px;
 
+                    @include md{
+                        height: 60px;
+                        width: 60px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
                     i {
                         font-size: 30px;
+                        @include md{
+                            font-size: 24px;
+                        }
                     }
+
                 }
             }
 
