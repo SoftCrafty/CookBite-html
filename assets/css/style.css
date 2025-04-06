@@ -6145,8 +6145,7 @@ textarea.is-invalid {
   border-radius: 100px;
 }
 .cs-shop-widget .range-slider #price-range {
-  height: 3px;
-  background: var(--button-color);
+  height: 2px;
   position: relative;
   padding: 0px;
 }
@@ -6157,7 +6156,7 @@ textarea.is-invalid {
   display: block;
   position: absolute;
   border-radius: 100px;
-  margin-top: -6px;
+  margin-top: -9px;
 }
 .cs-shop-widget .range-slider .ui-slider-handle:focus-visible {
   outline: none !important;
