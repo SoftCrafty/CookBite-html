@@ -1616,6 +1616,7 @@ textarea.is-invalid {
 .cs-header .cs-header-search i {
   color: var(--title-color);
   font-size: 20px;
+  font-weight: 400;
 }
 .cs-header .cs-header-toggle {
   /* Medium Large devices */
