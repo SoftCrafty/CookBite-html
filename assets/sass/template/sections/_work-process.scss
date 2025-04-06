@@ -74,8 +74,16 @@
 
                 .process-number {
                     position: absolute;
-                    color: $theme-color2;
-                    left: 80%;
+                    color: var(--button-color);
+                    left: 75%;
+                    background: var(--body-color2);
+                    border-radius: 50%;
+                    font-size: 16px;
+                    height: 30px;
+                    width: 30px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 

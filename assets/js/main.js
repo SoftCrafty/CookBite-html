@@ -89,8 +89,7 @@
     }
 
     var $mobileChildren = $('.cs-mobile-item-children');
-    $mobileChildren.on('click', function (e) {
-        e.preventDefault();
+    $mobileChildren.on('click', function () {
         toggleSubMenu($(this));
     });
 

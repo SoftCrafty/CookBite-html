@@ -44,8 +44,9 @@
                     width: 80px;
                     height: 80px;
                     border-radius: 100px;
-                    display: inline-block;
-                    text-align: center;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
                     color: $white-color;
                     line-height: 95px;
 
@@ -59,9 +60,6 @@
                     @include sm{
                         height: 60px;
                         width: 60px;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
                     }
                 }
             }

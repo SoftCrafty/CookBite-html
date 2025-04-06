@@ -57,6 +57,7 @@
         height: 56px;
         border: none;
         background-color: $green-color2;
+        padding-left: 30px;
     
         span{
             color: $white-color;
@@ -201,19 +202,6 @@
     }
 }
 
-.cart-table table tbody tr {
-    td{
-        &:first-child{
-            border-top-left-radius: 30px;
-            border-bottom-left-radius: 30px;
-        }
-        &:last-child{
-            border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-        }
-    }
-     
-}
 
 // my account page
 .cs-my-account{
@@ -234,6 +222,11 @@
 }
 .cs-my-account .accont-form .account-btn .cs-btn {
     padding: 16px 85px;
+    border-radius: 4px;
+
+    &::before{
+        border-radius: 4px;
+    }
 }
 .cs-my-account .account-email .accont-form .account-btn .cs-btn {
     padding: 16px 305px;
