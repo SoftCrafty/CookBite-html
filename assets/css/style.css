@@ -6503,9 +6503,6 @@ textarea.is-invalid {
 .cs-my-account .account-content .account-text {
   color: var(--gray-color3);
 }
-.cs-my-account .accont-form {
-  margin-top: 10px;
-}
 .cs-my-account .accont-form label {
   margin-bottom: 0px;
   color: var(--title-color);
@@ -6513,6 +6510,15 @@ textarea.is-invalid {
   font-family: var(--title-font);
   font-size: 20px;
   line-height: 26px;
+}
+.cs-my-account .accont-form .mt {
+  margin-top: 0;
+  /* Small devices */
+}
+@media (max-width: 767px) {
+  .cs-my-account .accont-form .mt {
+    margin-top: 30px;
+  }
 }
 .cs-my-account .accont-form input {
   background: var(--white-color);
