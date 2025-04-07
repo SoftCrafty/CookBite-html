@@ -264,9 +264,26 @@
     .sticky {
         
         .header-logo {
-            padding: 0 35px;
-            @include xl{
+            padding: 0 50px;
+
+            @include xxxl{
+                padding: 0 32px;
+            }
+            @include lxxl{
                 padding: 0 41px;
+            }
+            @include xxl{
+                padding: 0 46px;
+            }
+            @include ml{
+                padding: 0 42px;
+            }
+
+            @include xl{
+                padding: 0 46px;
+            }
+            @include mxl{
+                padding: 0 32px;
             }
 
             @include lg{
@@ -291,7 +308,7 @@
         height: 100%;
         position: absolute;
         z-index: 9;
-        padding: 54px 32px;
+        padding: 54px 50px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -299,8 +316,24 @@
         -ms-flex-align: center;
         align-items: center;
 
-        @include xl{
+        @include xxxl{
+            padding: 54px 32px;
+        }
+        @include lxxl{
             padding: 54px 41px;
+        }
+        @include xxl{
+            padding: 54px 46px;
+        }
+        @include ml{
+            padding: 54px 42px;
+        }
+       
+        @include xl{
+            padding: 54px 46px;
+        }
+        @include mxl{
+            padding: 54px 32px;
         }
 
         @include lg {

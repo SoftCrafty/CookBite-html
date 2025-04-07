@@ -54,6 +54,13 @@
         @content;
     }
 }
+@mixin lxxl {
+
+    /* Large Device Than 1600*/
+    @media (max-width: #{$lxxl}) {
+        @content;
+    }
+}
 
 @mixin xxl {
 
@@ -75,6 +82,20 @@
 
     /* Medium Large devices */
     @media (max-width: #{$xl}) {
+        @content;
+    }
+}
+@mixin nextmax {
+
+    /* Medium Large devices */
+    @media (max-width: 1280px) {
+        @content;
+    }
+}
+@mixin mxl {
+
+    /* Medium Large devices */
+    @media (max-width: 1279px) {
         @content;
     }
 }
