@@ -742,14 +742,15 @@
               class="swiper cs-slider"
               id="gallerySlider"
               data-slider-options='{
-                        "breakpoints": {
-                            "0": {"slidesPerView": 1, "spaceBetween": 0},
-                            "576": {"slidesPerView": 2},
-                            "768": {"slidesPerView": 3,"spaceBetween": 0},
-                            "992": {"slidesPerView": 3,"spaceBetween": 0},
-                            "1200": {"slidesPerView": 4, "spaceBetween": 0}
-                        }
-                     }'
+                  "breakpoints": {
+                      "0": {"slidesPerView": 1, "spaceBetween": 0},
+                      "576": {"slidesPerView": 2, "spaceBetween": 0},
+                      "768": {"slidesPerView": 3, "spaceBetween": 0},
+                      "992": {"slidesPerView": 3, "spaceBetween": 0},
+                      "1200": {"slidesPerView": 4, "spaceBetween": 0},
+                      "1400": {"slidesPerView": 5, "spaceBetween": 0}
+                  }
+              }'
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -787,7 +788,23 @@
                 <div class="swiper-slide">
                   <div class="gallery-item">
                     <img
-                      src="assets/img/gallery/gallery-04.png"
+                      src="assets/img/gallery/gallery-01.png"
+                      alt="gallery image"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery-item">
+                    <img
+                      src="assets/img/gallery/gallery-02.png"
+                      alt="gallery image"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery-item">
+                    <img
+                      src="assets/img/gallery/gallery-03.png"
                       alt="gallery image"
                     />
                   </div>
@@ -816,17 +833,9 @@
                     />
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="gallery-item">
-                    <img
-                      src="assets/img/gallery/gallery-03.png"
-                      alt="gallery image"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
-            <!-- Add Navigation -->
+            <!-- Navigation -->
             <button
               data-slider-prev="#gallerySlider"
               class="slider-arrow slider-prev"

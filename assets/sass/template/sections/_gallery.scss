@@ -5,9 +5,11 @@
 
     .swiper {
         border-radius: 20px;
+        
 
         .gallery-item {
             img {
+               
                 @include xs {
                     width: 100%;
                 }
